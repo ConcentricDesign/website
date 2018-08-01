@@ -21,6 +21,11 @@ form_sections:
     required: true
     label: 'Your name:'
     placeholder: John Smith
+  - unique_name: title
+    type: text
+    required: true
+    label: 'Job Title:'
+    placeholder: My Job Title
   - unique_name: email
     type: email
     required: true
