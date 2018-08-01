@@ -23,7 +23,7 @@ form_sections:
     placeholder: John Smith
   - unique_name: title
     type: text
-    required: true
+    required: 
     label: 'Job Title:'
     placeholder: My Job Title
   - unique_name: email
