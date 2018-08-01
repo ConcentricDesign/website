@@ -1,0 +1,174 @@
+---
+layout: default
+---
+
+{% for section in page.sections %}
+  <section class="{{ section.name }}{% if section.bg_color_name %} bg-{{ section.bg_color_name }}{% endif %}">
+    <div class="container">
+      {{ section.title_md | markdownify }}
+      {% unless section.name == "hero" %}
+        {{ section.content_md | markdownify }}
+      {% endunless %}
+
+      {% case section.name %}
+        {% when "hero" %}
+          <div class="row">
+            <div class="visible-xs-block visible-sm-block">
+              <div class="col-sm-12">
+                <img src="{{ section.content_photo }}" class="pull-up center hero-image"/>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-md-offset-1">
+              {{ section.content_md | markdownify }}
+            </div>
+            <div class="visible-md-block visible-lg-block">
+              <div class="col-md-6">
+                <img src="{{ section.content_photo }}" class="pull-up" />
+              </div>
+            </div>
+          </div>
+
+        {% when "what_we_do" %}
+          {% for service in section.services %}
+            <div class="about-service">
+              <div class="row">
+                {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                {% if thecycle == 'odd' %}
+                <div class="visible-xs-block">
+                  <div class="bg-{{ service.box_color_name }} clearfix service-image-container">
+                    <div class="col-xs-12">
+                      <img src="{{ service.wide_image }}" />
+                    </div>
+                  </div>
+                </div>
+                  <div class="visible-md-block visible-lg-block">
+                    <div class="col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
+                      <img src="{{ service.image }}" />
+                      <div class="js-animatedAccentBox anchored-bg anchored-left bg-{{ service.box_color_name }}"></div>
+                    </div>
+                  </div>
+                  <div class="visible-sm-block">
+                    <div class="col-sm-12">
+                      <img src="{{ service.wide_image }}" />
+                      <div class="js-animatedAccentBox anchored-bg anchored-left bg-{{ service.box_color_name }}"></div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6">
+                    <h3>{{ service.title }}</h3>
+                    <p>{{ service.description }}</p>
+                    <div class="list-title">{{ service.examples_title }}</div>
+                    <ul class="capabilities-list">
+                      {% for capability in service.examples %}
+                        <li>{{ capability }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% else %}
+                  <div class="visible-xs-block">
+                    <div class="bg-{{ service.box_color_name }} clearfix service-image-container">
+                      <div class="col-xs-12">
+                        <img src="{{ service.wide_image }}" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="visible-sm-block">
+                    <div class="col-sm-12">
+                      <img src="{{ service.wide_image }}" />
+                      <div class="js-animatedAccentBox anchored-bg anchored-right bg-{{ service.box_color_name }}"></div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-2">
+                    <h3>{{ service.title }}</h3>
+                    <p>{{ service.description }}</p>
+                    <div class="list-title">{{ service.examples_title }}</div>
+                    <ul class="capabilities-list">
+                      {% for capability in service.examples %}
+                        <li>{{ capability }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div class="visible-md-block visible-lg-block">
+                    <div class="col-md-3">
+                      <img src="{{ service.image }}" />
+                      <div class="js-animatedAccentBox anchored-bg anchored-right bg-{{ service.box_color_name }}"></div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+
+        {% when "process" %}
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <img src="{{ section.content_photo }}" class="pull-up process-main-image" />
+            </div>
+            <div class="col-sm-12 col-md-6">
+              {% for process in section.process_steps %}
+                <div class="row process-item">
+                  <div class="col-md-2 js-animatedBar accent-bar bg-{{ process.text_color_name }}-faded"></div>
+                  <div class="col-xs-2 col-sm-2 col-md-2">
+                    <h2 class="{{ process.text_color_name }}">{{ process.step_id }}</h2>
+                  </div>
+                  <div class="col-xs-10 col-sm-10 col-md-8">
+                    <h2 class="text-left">{{ process.title }}</h2>
+                  </div>
+                </div>
+                <div class="row process-item">
+                  <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                    <p>{{ process.description }}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+        {% when "start_project" %}
+          <div class="section-footer">
+            {{ section.footer_md }}
+          </div>
+
+        {% when "portfolio" %}
+          <div class="row">
+            {% for project in section.projects %}
+            <div class="col-sm-12 col-md-5 col-md-offset-1">
+              <a href="{{ project.project_link }}">
+                <img src="{{ project.photo }}" class="about-headshot" />
+              </a>
+              <h2 class="text-left">
+                <a class="link link-blue" href="{{ project.project_link }}">{{ project.name }}</a>
+              </h2>
+              <p>{{ project.description }}</p>
+            </div>
+            {% endfor %}
+          </div>
+
+        {% when "instagram_feed" %}
+          {% include instagram-feed.html %}
+          <div class="section-footer">
+            {{ section.footer_md }}
+          </div>
+
+        {% when "clients" %}
+          <div class="client-logo-grid space-top-large">
+            <div class="row">
+              <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <div class="row">
+                  {% for logo in section.client_logo_images %}
+                    <div class="col-xs-6 col-sm-4 col-md-3">
+                      <div class="client-logo">
+                        <img src="{{ logo }}" />
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        {% when "get_started" %}
+
+      {% endcase %}
+    </div>
+  </section>
+{% endfor %}

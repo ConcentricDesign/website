@@ -2,10 +2,11 @@
 title: Small Business Package
 date: 2018-06-08 08:57:00 -05:00
 published: false
+permalink: "/small-business-package/"
 show_in_nav: false
 sections:
 - name: hero
-  bg_color_name: 
+  bg_color_name:
   title_md: "# Big design. Small business price."
   content_md: <p class="bigger">Concentric Design offers web and graphic design services
     specifically tailored to meet small business needs on small business budgets.
@@ -43,7 +44,7 @@ sections:
     - Analytics
     - 30-minute training session
   name: what_we_do
-  bg_color_name: 
+  bg_color_name:
   title_md: "# What's included?"
   content_md: <p class="bigger">Our small business visual identity and website design
     service starts at $5,000 and includes custom logo design, establishing a look
@@ -61,24 +62,22 @@ sections:
     <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/concentricdesign/sbintro');return false;"><div class="btn btn-blue">Schedule Consultation</div></a>
     <!-- Calendly link widget end -->
     <a href="/contact"><div class="btn btn-green">Contact Us</div></a>
-- name: bios
+- name: portfolio
   title_md: "# Recent projects"
-  founders:
-  - name: <a href="/work/glr/" class="link link-blue" target="_blank">Great Lakes
-      Representatives</a>
+  projects:
+  - name: Great Lakes Representatives
     photo: "/uploads/Portfolio_GLR_Cover-Portfolio.png"
-    bio: A small business with 30 years of history wanted to update and standardize
+    project_link: /work/glr
+    description: A small business with 30 years of history wanted to update and standardize
       their visual identity.
-  - name: <a href="/work/venns/" class="link link-blue" target="_blank">Venn's Woodland
-      Resort</a>
+  - name: Venn's Woodland Resort
     photo: "/uploads/Portfolio_Venns-Cover-Portfolio.png"
-    bio: This family-run lakefront resort needed a content-managed site and a redesigned
-      identity.
+    project_link: /work/venns-woodland-resort
+    description: This family-run lakefront resort needed a content-managed site and a redesigned identity.
 - name: get_started
   bg_color_name: green-faded
   title_md: <h1 class="mb-0">View our full <a href="/work" class="link link-green"
     target="_blank">portfolio</a>.</h1>
-  content_md: 
-layout: about
+  content_md:
+layout: small-business
 ---
-
