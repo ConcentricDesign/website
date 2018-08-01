@@ -6,7 +6,7 @@ published: false
 show_in_nav: false
 sections:
 - name: hero
-  bg_color_name:
+  bg_color_name: 
   title_md: "# Big design. Small business price."
   content_md: <p class="bigger">Concentric Design offers web and graphic design services
     specifically tailored to meet small business needs on small business budgets.
@@ -44,7 +44,7 @@ sections:
     - Analytics
     - 30-minute training session
   name: what_we_do
-  bg_color_name:
+  bg_color_name: 
   title_md: "# What's included?"
   content_md: <p class="bigger">Our small business visual identity and website design
     service starts at $5,000 and includes custom logo design, establishing a look
@@ -79,6 +79,7 @@ sections:
   bg_color_name: green-faded
   title_md: <h1 class="mb-0">View our full <a href="/work" class="link link-green"
     target="_blank">portfolio</a>.</h1>
-  content_md:
+  content_md: 
 layout: small-business
 ---
+
