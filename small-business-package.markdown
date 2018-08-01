@@ -48,7 +48,7 @@ sections:
   title_md: "# What's included?"
   content_md: <p class="bigger">Our small business visual identity and website design
     service starts at $5,000 and includes custom logo design, establishing a look
-    and feel for your business, and a Squarespace website. See below for details.</p>
+    and feel for your business, and a Squarespace website.<br /></p>
 - name: start_project
   bg_color_name: black
   title_md: "# Start a project today."
