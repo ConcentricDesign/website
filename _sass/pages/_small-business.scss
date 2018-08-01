@@ -1,0 +1,17 @@
+.project-grid-item {
+  @include breakpoint(xs) {
+    margin-bottom: 50px;
+  }
+
+  @include breakpoint(sm) {
+    margin-bottom: 50px;
+  }
+
+  @include breakpoint(md) {
+    height: 500px;
+  }
+
+  .project-image {
+    margin-bottom: 25px;
+  }
+}
