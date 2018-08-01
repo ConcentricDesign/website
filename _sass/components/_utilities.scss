@@ -1,0 +1,82 @@
+
+.hide {
+  display: none !important;
+  margin: 0 !important;
+  padding:0 !important;
+}
+
+// Positioning
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+.pull-up {
+  position: relative;
+  z-index: -1;
+  
+  @include breakpoint(xs) {
+    margin-top: -75px;
+  }
+  
+  @include breakpoint(sm) {
+    margin-top: -82px;
+  }
+}
+
+.clearfix:after {
+  content:" ";
+  display:block;
+  clear:both;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// Images
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-outset {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @include breakpoint(xs) {
+    width: calc(100vw - 30px);
+  }
+  
+  @include breakpoint(sm) {
+    width: calc(100vw - 80px);
+  }
+}
+  .img-outset-left {
+    max-width: calc(100% + 15px);
+    margin-left: -15px;
+  }
+  
+  .img-outset-right {
+    max-width: calc(100% + 15px);
+    margin-right: -15px;
+  }
+
+// Overflow
+.no-scroll {
+  overflow: hidden;
+}
+
+// Makes Bootstrap columns within a row equal height
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}

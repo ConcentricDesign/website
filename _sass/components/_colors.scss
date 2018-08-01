@@ -1,0 +1,27 @@
+// Base colors
+$color-black: rgb(30, 30, 30);
+
+// Brand colors
+$color-blue: rgb(0, 176, 208);
+$color-blue-faded: rgb(172, 222, 230);
+$color-green: rgb(0, 199, 178);
+$color-green-faded: rgb(160, 214, 210);
+$color-pink: rgb(244, 88, 122);
+$color-pink-faded: rgb(244, 178, 193);
+$color-red: rgb(220, 4, 81);
+$color-grey: rgb(153, 153, 153);
+$color-grey-light: rgb(153, 153, 153);
+
+.blue             { color: $color-blue; }
+.blue-faded       { color: $color-blue-faded; }
+.green            { color: $color-green; }
+.green-faded      { color: $color-green-faded; }
+.pink             { color: $color-pink; }
+.pink-faded       { color: $color-pink-faded; }
+
+.bg-blue          { background-color: $color-blue; }
+.bg-blue-faded    { background-color: $color-blue-faded; }
+.bg-green         { background-color: $color-green; }
+.bg-green-faded   { background-color: $color-green-faded; }
+.bg-pink          { background-color: $color-pink; }
+.bg-pink-faded    { background-color: $color-pink-faded; }

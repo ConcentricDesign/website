@@ -1,0 +1,82 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 54px;
+  pointer-events: none;
+  z-index: 9999;
+  
+  @include breakpoint(xs) {
+    padding-top: 30px;
+  }
+}
+
+.clickable {
+  pointer-events: all;
+}
+
+.scroll-top-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.scroll-top-button {
+  display: none;
+  margin-bottom: -5px;
+  margin-right: -5px;
+  padding: 5px;
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  cursor: pointer;
+  
+  @include breakpoint(sm) {
+    margin-bottom: 20px;
+  }
+}
+
+.header .container,
+.scroll-top-container .container {
+  max-width: 1170px;
+  width: auto;
+  
+  @include breakpoint(xs) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  @include breakpoint(sm) {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+  
+  @include breakpoint(md) {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+  
+  @include breakpoint(lg) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.logo {
+  width: 147px;
+}
+
+.menu-label {
+  margin-top: -5px;
+  margin-right: -5px;
+  font-family: "Gilroy-Bold";
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-label-text {
+  vertical-align: bottom;
+}

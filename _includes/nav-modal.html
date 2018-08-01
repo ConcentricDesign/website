@@ -1,0 +1,16 @@
+<nav class="js-menu nav-modal animated fadeIn clickable">
+  <div class="nav-links">
+    {% assign sorted_pages = site.pages | sort:"position" %}
+    {% for page in sorted_pages %}
+      {% unless page.show_in_nav == false %}
+        <div class="nav-link-container">
+          <a href="{{ page.url }}">{{ page.title }}</a>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+  {% include social-links.html %}
+  <div class="nav-link-container home-link">
+    <a href="/">{{ site.nav_home_link }}</a>
+  </div>
+</nav>

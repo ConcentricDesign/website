@@ -1,0 +1,262 @@
+
+.form-section {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.form-section-title {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.form-field-container {
+  position: relative;
+  margin-bottom: 50px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.required-field-indicator {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  font-family: 'Gilroy-SemiBold';
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $color-black;
+  
+  .has-value & {
+    color: $color-grey;
+  }
+  
+  input:focus ~ & {
+    color: $color-blue;
+  }
+  
+  .has-error & {
+    color: $color-red !important;
+  }
+}
+
+.error-indicator-icon {
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: -36px;
+  height: 24px;
+  width: 24px;
+  background: url("/resources/form_alert.svg") 50%/cover no-repeat;
+  
+  .has-error & {
+    display: block;
+  }
+}
+
+label {
+  .has-value & {
+    color: $color-grey;
+  }
+
+  .has-focus & {
+    color: $color-black;
+  }
+}
+
+.contact-survey .btn {
+  height: 44px;
+  line-height: 38px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.survey-submit-container {
+  position: relative;
+  float: right;
+  display: inline-block;
+  font-size: 0;
+
+  .submit-button {
+    display: inline-block;
+    width: 120px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.25s all;
+    outline: 0;
+    overflow: hidden;
+  }
+
+  .submit-error-icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    background: url("/resources/form_alert.svg") 50%/cover no-repeat;
+    transition: 0.5s all;
+  }
+
+  .submit-error-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    font-family: 'Gilroy-Bold';
+    font-size: 1rem;
+    line-height: 44px;
+    color: $color-red;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.5s;
+  }
+
+  &.has-error {
+    .submit-button {
+      border-color: $color-red;
+      background-color: $color-red;
+      width: 44px;
+      color: $color-red;
+    }
+    
+    .submit-error-icon {
+      display: inline-block;
+    }
+    
+    .submit-error-text {
+      margin-left: 10px;
+      width: 68px;
+      opacity: 1;
+    }
+  }
+}
+
+// Form elements
+label {
+  font-family: 'Gilroy-Bold';
+  font-size: 24px;
+  
+  &.custom-checkbox {
+    font-family: 'Gilroy-Regular';
+  }
+}
+
+input[required] {
+  padding-right: 65px;
+}
+
+textarea {
+  height: 210px;
+  resize: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  font-family: 'Gilroy-Medium';
+  font-size: 24px;
+  
+  &,
+  &:hover,
+  &:focus {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 8px solid $color-black;
+    background: transparent;
+    outline: none;
+  }
+  
+  &:focus {
+    border-bottom-color: $color-blue;
+  }
+}  
+
+.has-error input[type="text"],
+.has-error input[type="email"],
+.has-error input[type="url"],
+.has-error textarea {
+  border-bottom-color: $color-red !important;
+}
+
+*::-webkit-input-placeholder {
+  font-family: 'Gilroy-Regular';
+  font-size: 24px;
+  color: $color-grey;
+}
+*::-moz-placeholder {
+  font-family: 'Gilroy-Regular';
+  font-size: 24px;
+  color: $color-grey;
+}
+*:-ms-input-placeholder {
+  font-family: 'Gilroy-Regular';
+  font-size: 24px;
+  color: $color-grey;
+}
+*:-moz-placeholder {
+  font-family: 'Gilroy-Regular';
+  font-size: 24px;
+  color: $color-grey;
+}
+
+.checkbox-group {
+  margin-top: 13px;
+}
+
+// Custom checkbox
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  input:not(:checked) ~ .control__indicator {
+    background: $color-black;
+  }
+  
+  input:not(:checked) ~ .control__indicator:after {
+    display: block;
+  }
+  
+  input:disabled ~ .control__indicator {
+    background: lightgrey;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  input:disabled ~ .control__indicator:after {
+    border-color: grey;
+  }
+}
+
+.control__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background: $color-black;
+  
+  &:after {
+    content: '';
+    display: none;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+  }
+}

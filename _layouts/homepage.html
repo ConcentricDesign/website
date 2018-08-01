@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+{% assign sorted_sections = page.sections | sort: "position" %}
+{% for section in sorted_sections %}
+  <section class="{{ section.name }}{% if section.bg_color_name %} bg-{{ section.bg_color_name }}{% endif %}">
+    <div class="container">
+      <div class="row">
+        {{ section.title_md | markdownify }}
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+          {{ section.content_md | markdownify }}
+        </div>
+      </div>
+      
+      {% case section.name %}
+        {% when "hero" %}
+          <div class="hero-capabilities">
+            <div class="row">
+              <div class="col-sm-12 col-md-10 col-md-offset-1">
+                
+                <div class="visible-xs-block visible-sm-block">
+                  <div class="row">
+                    {% assign sorted_services = section.capabilities | sort:"position" %}
+                    {% for service in sorted_services %}
+                      <div class="col-md-4">
+                        <div class="capability-module">
+                          <div class="capability-graphic">
+                            <img src="{{ service.image }}" />
+                          </div>
+                          <h2 class="capability-title">{{ service.title }}</h2>
+                          <ul class="js-fixedHeightContainer capability-detail{% if service.bg_color_name %} bg-{{ service.bg_color_name }}{% endif %}">
+                            {% for capability in service.capabilities %}
+                              <li>{{ capability }}</li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                
+                <div class="visible-md-block visible-lg-block">
+                  <div class="row">
+                    {% assign sorted_services = section.capabilities | sort:"position" %}
+                    {% for service in sorted_services %}
+                      <div class="col-md-4">
+                        <div class="capability-module">
+                          <div class="capability-graphic">
+                            <img src="{{ service.image }}" />
+                          </div>
+                          <h2 class="capability-title">{{ service.title }}</h2>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <div class="row row-eq-height">
+                    {% assign sorted_services = section.capabilities | sort:"position" %}
+                    {% for service in sorted_services %}
+                      <ul class="col-md-4 capability-detail{% if service.bg_color_name %} bg-{{ service.bg_color_name }}{% endif %}">
+                        {% for capability in service.capabilities %}
+                          <li>{{ capability }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endfor %}
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        {% when "work" %}
+          {% include featured-work.html %}
+          
+        {% when "dribbble_feed" %}
+          {% include dribbble-feed.html %}
+
+      {% endcase %}
+      <div class="section-footer">
+        {{ section.footer_md | markdownify }}
+      </div>      
+    </div>
+  </section>
+{% endfor %}

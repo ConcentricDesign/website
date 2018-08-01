@@ -1,0 +1,86 @@
+---
+layout: page
+---
+
+<script type="text/javascript" src="/js/survey.js" defer></script>
+
+<div class="row">
+  {{ page.title_md | markdownify }}
+</div>
+<div class="row">
+  <div class="col-sm-12 col-md-10 col-md-offset-1">
+    {{ page.content_md | markdownify }}
+  </div>
+</div>
+
+<form class="js-surveyForm contact-survey" action="https://formspree.io/{{ site.email }}" method="post">
+  {% assign sorted_sections = page.form_sections | sort:"position" %}
+  {% for section in sorted_sections %}
+    <div class="form-section js-formElements">
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-5 col-md-offset-3">
+          <h2 class="form-section-title">{{ section.title }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+          {% assign sorted_fields = section.fields | sort:"position" %}
+          {% for field in sorted_fields %}
+            <div class="js-fieldContainer form-field-container">
+              
+              {% case field.type %}
+              {% when "text" %}
+                <label for="{{ field.unique_name }}">{{ field.label }}</label>
+                <input id="{{ field.unique_name }}" name="{{ field.unique_name }}" type="text" placeholder="{{ field.placeholder }}" {% if field.required %}required{% endif %}/>
+                
+              {% when "email" %}
+                <label for="{{ field.unique_name }}">{{ field.label }}</label>
+                <input id="{{ field.unique_name }}" name="{{ field.unique_name }}" type="email" placeholder="{{ field.placeholder }}" {% if field.required %}required{% endif %}/>
+                
+              {% when "url" %}
+                <label for="{{ field.unique_name }}">{{ field.label }}</label>
+                <input id="{{ field.unique_name }}" name="{{ field.unique_name }}" type="url" placeholder="{{ field.placeholder }}" {% if field.required %}required{% endif %}/>
+                
+              {% when "checkbox_group" %}
+                <label>{{ field.group_title }}</label>
+                {% for input in field.checkboxes %}
+                  <div class="checkbox-group">
+                    <label for="{{ input.unique_name }}" class="custom-checkbox">
+                      {{ input.label | escape }}
+                      <input id="{{ input.unique_name }}" name="{{ input.unique_name }}" type="checkbox" />
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                {% endfor %}
+
+              {% when "textarea" %}
+                <label for="{{ field.unique_name }}">{{ field.label }}</label>
+                <textarea id="{{ field.unique_name }}" name="{{ field.unique_name }}" placeholder="{{ field.placeholder }}" {% if field.required %}required{% endif %}></textarea>
+
+              {% endcase %}
+              
+              {% if field.required == true %}
+                <span class="js-requiredIndicator required-field-indicator">Required</span>
+              {% endif %}
+              <span class="error-indicator-icon"></span>
+
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  
+  <input class="hide" name="_next" value="{{ site.url }}/contact/thanks" type="text" />
+  <input class="hide js-trapField" name="_should_be_blank" value="" type="text" />
+  
+  <div class="row text-right space-top-large">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+      <div class="js-surveySubmitButtonContainer survey-submit-container">
+        <div class="submit-error-icon"></div>
+        <div class="btn js-submitForm submit-button">{{ page.submit_button_label }}</div>
+        <div class="submit-error-text">{{ page.form_error_label }}</div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,123 @@
+section.contact-options-section.bare {
+  padding-bottom: 200px;
+  overflow-x: hidden;
+  
+  @include breakpoint(xs) {
+    padding-bottom: 50px;
+  }
+}
+
+.contact-option {
+  @include breakpoint(xs) {
+    height: 450px;
+  }
+  
+  @include breakpoint(sm) {
+    height: 450px;
+  }
+  
+  @include breakpoint(md) {
+    height: auto;
+  }
+}
+
+.anchored-bg {
+  position: absolute;
+  height: 226px;
+  z-index: -1;
+  
+  @include breakpoint(xs) {
+    top: 166px;
+  }
+  @include breakpoint(sm) {
+    top: 166px;
+  }
+  @include breakpoint(md) {
+    top: 170px;
+  }
+  @include breakpoint(lg) {
+    top: 172px;
+  }
+  
+  &.anchored-left {
+    @include breakpoint(xs) {
+      left: -200px;
+      right: 0;
+      width: 150vw;
+    }
+    @include breakpoint(sm) {
+      left: -200px;
+      right: 0;
+      width: 150vw;
+    }
+    @include breakpoint(md) {
+      left: auto;
+      right: -60px;
+      width: calc(50vw + 100px);
+    }
+    @include breakpoint(lg) {
+      left: auto;
+      right: -80px;
+      width: calc(50vw + 100px);
+    }
+  }
+  
+  &.anchored-right {
+    @include breakpoint(xs) {
+      left: -200px;
+      right: 0;
+      width: 150vw;
+    }
+    @include breakpoint(sm) {
+      left: -200px;
+      right: 0;
+      width: 150vw;
+    }
+    @include breakpoint(md) {
+      left: -60px;
+      right: auto;
+      width: calc(50vw + 100px);
+    }
+    @include breakpoint(lg) {
+      left: -80px;
+      right: auto;
+      width: calc(50vw + 100px);
+    }
+  }
+}
+
+.contact-option-graphic {
+  margin-bottom: 45px;
+  height: 100px;
+  text-align: center;
+  
+  img {
+    display: inline-block;
+    width: auto;
+    max-height: 100%;
+  }
+}
+
+.contact-option-title {
+  margin-bottom: 15px;
+}
+
+.contact-option-description {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.contact-option-action {
+  font-family: 'Gilroy-Bold';
+  font-size: 24px;
+  line-height: 1.4;
+  
+  .btn {
+    margin-top: 10px;
+    height: 44px;
+    line-height: 38px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}

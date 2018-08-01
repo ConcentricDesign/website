@@ -1,0 +1,45 @@
+.nav-modal {
+  display: none;
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  padding: 54px;
+  background: $color-black;
+  color: white;
+  text-align: center;
+  overflow: auto;
+  z-index: 999;
+  
+  &.is-open {
+    display: block;
+  }
+  
+  @include breakpoint(xs) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.nav-links {
+  margin-top: 30px;
+  font-size: 72px;
+}
+
+.nav-link-container {
+  font-family: 'Gilroy-SemiBold';
+  margin-bottom: 20px;
+}
+
+.home-link {
+  margin-top: 70px;
+  font-size: 24px;
+}
+
+.nav-link-container a:hover {
+  @extend .link;
+  background-image: -webkit-linear-gradient($color-blue, $color-blue);
+  background-image: linear-gradient($color-blue, $color-blue);
+}
+
+.nav-modal .social-account-links {
+  margin-top: 70px;
+}

@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+{% include scrolltop-button.html %}
+
+<main class="project-page">
+  <div class="project-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-offset-1 col-md-2">
+          <h1 class="project-title">{{ page.name }}</h1>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="project-description">
+            {{ page.description | markdownify }}
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-4">
+          <div class="list-title">Services</div>
+          <ul class="capabilities-list">
+            {% for group in page.service_groups %}
+              {% for service in group.capabilities %}
+                <li>{{ service }}</li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    {% for photo in page.photos %}
+      <img src="{{photo}}" class="project-photo img-outset" />
+    {% endfor %}
+  </div>
+  <div class="container">
+    {% if page.quote %}
+      <div class="row">
+        <div class="col-sm-12 col-md-offset-1 col-md-6">
+          <blockquote>
+            <div class="quote-text">{{ page.quote.text | markdownify }}</div>
+            <p class="quote-attribution">{{ page.quote.attribution }}</p>
+          </blockquote>
+        </div>
+      </div>
+    {% endif %}
+    {% if page.outro_text %}
+      <div class="row">
+        <div class="col-sm-12 col-md-offset-5 col-md-6">
+          <div class="footer-blurb">{{ page.outro_text | markdownify }}</div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  <div class="container">
+    {% include project-sharing-buttons.html %}
+  </div>
+</main>
+
+{% assign sorted_projects = site.work | sort: "position" %}
+
+{% assign prev_index = page.position | minus: 1 %}
+{% if prev_index == -1 %}
+  {% assign prev_index = sorted_projects | size  | minus: 1 %}
+{% endif %}
+
+{% assign next_index = page.position | plus: 1 %}
+{% assign document_count = sorted_projects | size %}
+{% if next_index == document_count %}
+  {% assign next_index = 0 %}
+{% endif %}
+
+{% assign prev_project = sorted_projects[prev_index] %}
+{% assign next_project = sorted_projects[next_index] %}
+
+<div class="pagination">
+  <a href="{{ prev_project.url }}">
+    <div class="pagination-left bg-pink-faded js-paginationHover" style="background-image: url('{{ prev_project.cover_photo }}')">
+      <div class="pagination-button button-left clearfix">
+        <div class="pagination-button-text">
+          <div class="pagination-button-title">
+            <div>
+              <span class="link link-pink">Previous</span>
+            </div>
+            <div>project</div>
+          </div>
+          <div class="pagination-button-subtitle">{{ prev_project.name }}</div>
+          <div class="pagination-button-subtext visible-sm-block visible-md-block visible-lg-block">
+            {% for category in prev_project.categories %}
+              {% if category == "Identity" %}
+                <span>{{ category }}</span>
+              {% endif %}
+              {% if category == "Digital" %}
+                <span>{{ category }}</span>
+              {% endif %}
+              {% if category == "Print" %}
+                <span>{{ category }}</span>
+              {% endif %}
+              <span class="project-services-divider">/</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="{{ next_project.url }}">
+    <div class="pagination-right bg-blue-faded js-paginationHover" style="background-image: url('{{ next_project.cover_photo }}')">
+      <div class="pagination-button button-right clearfix">
+        <div class="pagination-button-text">
+          <div class="pagination-button-title">
+            <div>
+              <span class="link link-blue">Next</span>
+            </div>
+            <div>project</div>
+          </div>
+          <div class="pagination-button-subtitle">{{ next_project.name }}</div>
+          <div class="pagination-button-subtext visible-sm-block visible-md-block visible-lg-block">
+            {% for category in next_project.categories %}
+              {% if category == "Identity" %}
+                <span>{{ category }}</span>
+              {% endif %}
+              {% if category == "Digital" %}
+                <span>{{ category }}</span>
+              {% endif %}
+              {% if category == "Print" %}
+                <span>{{ category }}</span>
+              {% endif %}
+              <span class="project-services-divider">/</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

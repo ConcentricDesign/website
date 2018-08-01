@@ -1,0 +1,38 @@
+<div class="social-account-links">
+  {% if contact_info.email %}
+    <a href="mailto:{{ contact_info.email }}" target="_blank" class="social-link">
+      <span class="icon-envelope"></span>
+    </a>
+  {% endif %}
+  
+  {% if contact_info.facebook %}
+    <a href="https://facebook.com/{{ contact_info.facebook }}" target="_blank" class="social-link">
+      <i class="fa fa-facebook"></i>
+    </a>
+  {% endif %}
+  {% if contact_info.instagram %}
+    <a href="https://instagram.com/{{ contact_info.instagram }}" target="_blank" class="social-link">
+      <i class="fa fa-instagram"></i>
+    </a>
+  {% endif %}
+  {% if contact_info.twitter %}
+    <a href="https://twitter.com/{{ contact_info.twitter }}" target="_blank" class="social-link">
+      <i class="fa fa-twitter"></i>
+    </a>
+  {% endif %}
+  {% if contact_info.linkedin %}
+    <a href="https://linkedin.com/in/{{ contact_info.linkedin }}" target="_blank" class="social-link">
+      <i class="fa fa-linkedin-square"></i>
+    </a>
+  {% endif %}
+  {% if contact_info.dribbble %}
+    <a href="https://dribbble.com/{{ contact_info.dribbble }}" target="_blank" class="social-link">
+      <i class="fa fa-dribbble"></i>
+    </a>
+  {% endif %}
+  {% if contact_info.behance %}
+    <a href="https://behance.net/{{ contact_info.behance }}" target="_blank" class="social-link">
+      <i class="fa fa-behance"></i>
+    </a>
+  {% endif %}
+</div>

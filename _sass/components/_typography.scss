@@ -1,0 +1,127 @@
+
+body {
+  font-family: 'Gilroy-Medium', 'Helvetica', 'Arial', sans-serif;
+  color: $color-black;
+}
+
+h1 {
+  margin-bottom: 56px;
+  font-family: "Gilroy-ExtraBold";
+  line-height: 1.1;
+  text-align: center;
+  
+  @include breakpoint(xs) {
+    font-size: 48px;
+  }
+  
+  @include breakpoint(sm) {
+    font-size: 64px;
+  }
+  
+  @include breakpoint(md) {
+    font-size: 72px;
+  }
+}
+
+h2 {
+  font-family: "Gilroy-Bold";
+  line-height: 1.2;
+  text-align: center;
+  
+  @include breakpoint(xs) {
+    font-size: 28px;
+  }
+  
+  @include breakpoint(sm) {
+    font-size: 32px;
+  }
+  
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.333;
+  
+  &.last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 14px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.list-title {
+  margin-bottom: 5px;
+  font-family: 'Gilroy-Bold';
+  font-size: 14px;
+}
+
+.bigger {
+  @include breakpoint(xs) {
+    font-size: 20px;
+  }
+  
+  @include breakpoint(sm) {
+    font-size: 22px;
+  }
+  
+  @include breakpoint(md) {
+    font-size: 24px;
+  }
+}
+
+blockquote {
+  &,
+  p {
+    padding-left: 20px;
+    font-family: 'Gilroy-ExtraBold';
+    
+    @include breakpoint(xs) {
+      font-size: 24px;
+    }
+    @include breakpoint(sm) {
+      font-size: 24px;
+    }
+    @include breakpoint(md) {
+      font-size: 28px;
+    }
+    @include breakpoint(lg) {
+      font-size: 36px;
+    }
+  }
+  
+  .quote-text {
+    border-left: 8px solid $color-green;  
+  }
+  
+  .quote-attribution {
+    padding-left: 28px;
+    margin-top: 15px;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 14px;
+    color: $color-green-faded;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

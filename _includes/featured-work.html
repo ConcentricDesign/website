@@ -1,0 +1,19 @@
+<div class="featured-work-list">
+  {% assign sorted_projects = site.work | sort:"position" %}
+  {% for project in sorted_projects %}
+    {% assign featured = false %}
+    {% for tag in project.tags %}
+      {% if tag == "featured" %}
+        {% assign featured = true %}
+      {% endif %}
+    {% endfor %}
+    {% if featured == true %}
+      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if thecycle == 'odd' %}
+        {% include featured-work-odd.html %}
+      {% else %}
+        {% include featured-work-even.html %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

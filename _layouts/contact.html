@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+{% for section in page.sections %}
+  {% case section.name %}
+  {% when "hero" %}
+    <section class="hero bare">
+      <div class="container">
+        <div class="row">
+          {{ section.title_md | markdownify }}
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            {{ section.content_md | markdownify }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {% when "contact-actions" %}
+    <section class="contact-options-section bare">
+      <div class="container">
+        <div class="row">
+          {% for option in section.options %}
+            {% case option.name %}
+            {% when "email" %}
+              <div class="contact-option">
+                <div class="col-sm-12 col-md-4 col-md-offset-1">
+                  <div class="anchored-bg anchored-left bg-{{option.bg_color_name}}"></div>
+                  <div>
+                    <div class="contact-option-graphic">
+                      <img src="{{option.image}}" />
+                    </div>
+                    <div class="text-center">
+                      <h2 class="contact-option-title">{{ option.title }}</h2>
+                      <p class="contact-option-description">{{ option.description }}</p>
+                      <div class="contact-option-action">
+                        <div>
+                          <a href="mailto:{{ site.email }}" class="link link-pink">{{ site.email }}</a>
+                        </div>
+                        <div>{{ site.phone }}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% when "inquiry" %}
+              <div class="contact-option">
+                <div class="col-sm-12 col-md-4 col-md-offset-2">
+                  <div class="anchored-bg anchored-right bg-{{option.bg_color_name}}"></div>
+                  <div>
+                    <div class="contact-option-graphic">
+                      <img src="{{option.image}}" />
+                    </div>
+                    <div class="text-center">
+                      <h2 class="contact-option-title">{{ option.title }}</h2>
+                      <p class="contact-option-description">{{ option.description }}</p>
+                      <div class="contact-option-action">
+                        {{ option.call_to_action_md | markdownify }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endcase %}
+{% endfor %}

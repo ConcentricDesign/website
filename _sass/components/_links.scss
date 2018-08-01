@@ -1,0 +1,111 @@
+// Custom underlines for links
+.link {
+  background-size: calc(100% + 7px) 12px;
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+  
+  &,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+  
+  .project-link & {
+    background-size: calc(100% + 7px) 5px;
+  }
+  
+  .project-services & {
+    background-position: 0 85%;
+  }
+  
+  .pagination-button-title & {
+    background-position: 0 100%;
+  }
+  
+  h2 & {
+    background-position: 0 90%;
+    background-size: calc(100% + 7px) 8px;
+  }
+  
+  .contact-option-action & {
+    background-position: 0 115%;
+  }
+  
+  p.bigger & {
+    background-position: 0 120%;
+    background-size: calc(100% + 7px) 10px;
+  }
+}
+
+.link-green {
+  background-image: -webkit-linear-gradient($color-green, $color-green);
+  background-image: linear-gradient($color-green, $color-green);
+  
+  &:hover {
+    background-image: -webkit-linear-gradient($color-green-faded, $color-green-faded);
+    background-image: linear-gradient($color-green-faded, $color-green-faded);
+    
+    @include breakpoint(xs) {
+      background-image: -webkit-linear-gradient($color-green, $color-green);
+      background-image: linear-gradient($color-green, $color-green);
+    }
+  }
+}
+
+.link-blue {
+  background-image: -webkit-linear-gradient($color-blue, $color-blue);
+  background-image: linear-gradient($color-blue, $color-blue);
+  
+  &:hover {
+    background-image: -webkit-linear-gradient($color-blue-faded, $color-blue-faded);
+    background-image: linear-gradient($color-blue-faded, $color-blue-faded);
+    
+    @include breakpoint(xs) {
+      background-image: -webkit-linear-gradient($color-blue, $color-blue);
+      background-image: linear-gradient($color-blue, $color-blue);
+    }
+  }
+}
+
+.link-pink {
+  background-image: -webkit-linear-gradient($color-pink, $color-pink);
+  background-image: linear-gradient($color-pink, $color-pink);
+  
+  &:hover {
+    background-image: -webkit-linear-gradient($color-pink-faded, $color-pink-faded);
+    background-image: linear-gradient($color-pink-faded, $color-pink-faded);
+    
+    @include breakpoint(xs) {
+      background-image: -webkit-linear-gradient($color-pink, $color-pink);
+      background-image: linear-gradient($color-pink, $color-pink);
+    }
+  }
+}
+
+// Social links
+.social-link {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 24px;
+}
+.social-link:hover:first-child,
+.social-link:hover:nth-child(4) {
+  color: $color-blue;
+}
+
+.social-link:hover:nth-child(2),
+.social-link:hover:nth-child(5) {
+  color: $color-pink;
+}
+
+.social-link:hover:nth-child(3),
+.social-link:hover:nth-child(6) {
+  color: $color-green;
+}

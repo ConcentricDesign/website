@@ -1,0 +1,43 @@
+<footer class="site-footer js-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-9">
+        <img class="logo js-footerLogo" src="{{ site.logo_rev_image }}" />
+        <div class="site-description">
+          <div><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
+          <div>{{ site.phone }}</div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="footer-section-header">{{ site.footer.mailing_list_signup.title }}</div>
+        <p>{{ site.footer.mailing_list_signup.description }}</p>
+        <div class="email-signup-group clearfix">
+          <form action="//concentricmade.us6.list-manage.com/subscribe/post-json?u=0f1806ab318089568135a13b2&amp;id=3790a28b7d" method="get" id="js-mailingListForm" name="mailing-list-form-footer" class="js-mailingListFormFooter" target="_blank" novalidate>
+            <label class="mailing-list-label" for="js-mailingListInput">{{ site.footer.mailing_list_signup.input_label }}</label>
+            <input class="mailing-list-input" id="js-mailingListInput" type="email" value="" name="EMAIL" required placeholder="{{ site.footer.mailing_list_signup.input_placeholder }}" />
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_0f1806ab318089568135a13b2_3790a28b7d" tabindex="-1" value="">
+            </div>
+            <div id="js-submitContainer" class="mailing-list-submit-container">
+              <div class="submit-thanks-icon"></div>
+              <input type="submit" name="subscribe" id="js-mailingListSubmit" value="{{ site.footer.mailing_list_signup.submit_button_label }}" class="submit-button btn btn-small btn-white" />
+              <div class="submit-thanks-text">
+                {{ site.footer.mailing_list_signup.thanks_message }}
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="site-legal">{{ site.footer.legal_md }}</div>
+      </div>
+      <div class="col-sm-12 col-md-6">{% include social-links.html %}</div>
+    </div>
+
+  </div>
+
+</footer>

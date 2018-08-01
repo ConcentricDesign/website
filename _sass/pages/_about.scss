@@ -1,0 +1,211 @@
+
+.About .hero-image {
+  margin-bottom: 50px;
+}
+
+.about-service {
+  position: relative;
+  margin-bottom: 106px;
+  padding-top: 50px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @include breakpoint(xs) {
+    margin-bottom: 75px;
+    padding-top: 0;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+  }
+  
+  .list-title {
+    margin-top: 25px;
+  }
+  
+  .capabilities-list {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    
+    @include breakpoint(xs) {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+    }
+    
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+}
+
+.what_we_do {
+  overflow-x: hidden;
+}
+
+.about-service img {
+  @include breakpoint(sm) {
+    margin-top: -2px;
+    margin-bottom: 75px;
+  }
+  
+  @include breakpoint(md) {
+    margin-bottom: 0;
+  }
+}
+
+.about-service .service-image-container {
+  margin-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-service .anchored-bg {
+  position: absolute;
+  top: -50px;
+  transition: all 1s;
+  
+  &.anchored-left {
+    left: auto;
+    
+    @include breakpoint(sm) {
+      right: -200px;
+    }
+    
+    @include breakpoint(md) {
+      right: 50vw; // Controlled by JS animation
+    }
+  }
+  
+  &.anchored-right {
+    right: auto;
+    
+    @include breakpoint(sm) {
+      left: -200px;
+    }
+    
+    @include breakpoint(md) {
+      left: 50vw; // Controlled by JS animation
+    }
+  }
+  
+  @include breakpoint(xs) {
+    height: 255px;
+  }
+  
+  @include breakpoint(sm) {
+    height: 289px;
+  }
+  
+  @include breakpoint(md) {
+    height: 283px;
+  }
+}
+
+.service-accent-box {
+  height: 276px;
+  width: 50%;
+  
+}
+
+.process-item {
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 40px;
+  }
+  
+  &:last-child p {
+    margin-bottom: 0;
+  }
+}
+
+.about-headshot {
+  margin-bottom: 50px;
+}
+
+.about-name {
+  font-family: 'Gilroy-Bold';
+  font-size: 36px;
+}
+
+.about-title {
+  margin-bottom: 30px;
+  font-family: 'Gilroy-Bold';
+  font-size: 21px;
+}
+
+.process .accent-bar {
+  position: absolute;
+  width: 0;
+  height: 56px;
+  margin-left: -30px;
+  transition: width 1s;
+  
+  @include breakpoint(xs) {
+    margin-top: -13px;
+  }
+  
+  @include breakpoint(sm) {
+    margin-top: -10px;
+  }
+}
+
+.process-main-image {
+  @include breakpoint(xs) {
+    margin-bottom: 50px;
+  }
+  
+  @include breakpoint(sm) {
+    margin-bottom: 50px;
+  }
+}
+
+.bios .social-account-links {
+  text-align: center;
+  font-size: 32px;
+  
+  @include breakpoint(xs) {
+    margin-top: 15px;
+  }
+  
+  @include breakpoint(sm) {
+    margin-top: 35px;
+  }
+}
+
+.bios .social-account-links .social-link {
+  margin-left: 7px;
+  margin-right: 7px;
+  
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.client-logo-grid .client-logo {
+  @include breakpoint(xs) {
+    margin-bottom: 15px;
+  }
+  
+  @include breakpoint(sm) {
+    margin-bottom: 30px;
+  }
+  
+  @include breakpoint(md) {
+    margin-bottom: 30px;
+  }
+}
+
+.instagram-hidden-form {
+  display: none;
+}

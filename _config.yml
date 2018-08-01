@@ -1,0 +1,74 @@
+---
+title: Concentric Design
+timezone: America/Chicago
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  work:
+    title: Work
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    show_in_nav: true
+    layout: page
+- scope:
+    path: ''
+    type: work
+  values:
+    name: ''
+    lead: ''
+    description: '""'
+    service_groups:
+    - name: 
+      capabilities:
+      - 
+    cover_photo: ''
+    photos:
+    - ''
+    quote:
+      attribution: ''
+      text: ''
+    outro_text: ''
+    social_sharing_text:
+      twitter: 
+      linkedin: 
+    layout: project
+email: hello@concentric.design
+phone: 312 725 9509
+description: Concentric Design is a Chicago-based graphic design firm that specializes
+  in visual identity, digital, and print design projects.
+baseurl: 
+url: http://concentric.design
+markdown: kramdown
+gems:
+- jekyll-sitemap
+instagram_access_token: 2585789514.9287f26.e994b4c15d79468a805b108f83111012
+social_accounts:
+  twitter: concentricmade
+  facebook: concentricdesign
+  instagram: concentricdesign
+  dribbble: concentric
+  behance: concentric
+  linkedin: concentric-design
+nav_home_link: Home
+logo_image: "/uploads/logo.svg"
+logo_png_image: "/uploads/logo.png"
+logo_rev_image: "/uploads/logo_rev.svg"
+logo_horizontal_image: "/uploads/logo_horizontal.svg"
+footer:
+  legal_md: ©<span class="js-year"></span> Concentric Design, LLC. All Rights Reserved.
+    Made in Chicago.
+  mailing_list_signup:
+    title: Subscribe.
+    description: Receive quarterly newsletters and special announcements.
+    input_label: E-mail address
+    input_placeholder: you@email.com
+    submit_button_label: Subscribe
+    thanks_message: Thanks!

@@ -1,0 +1,17 @@
+<div class="project-services">
+  {% for category in project.categories %}
+    {% if category == "Identity" %}
+      <a href="/work/?filter={{ category | downcase }}" class="link link-blue">{{ category }}</a>
+    {% endif %}
+    {% if category == "Digital" %}
+      <a href="/work/?filter={{ category | downcase }}" class="link link-pink">{{ category }}</a>
+    {% endif %}
+    {% if category == "Print" %}
+      <a href="/work/?filter={{ category | downcase }}" class="link link-green">{{ category }}</a>
+    {% endif %}
+    <span class="project-services-divider">/</span>
+  {% endfor %}
+</div>
+<a href="{{ project.url }}">
+  <img src="{{ project.cover_photo }}" class="project-cover" />
+</a>

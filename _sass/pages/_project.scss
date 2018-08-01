@@ -1,0 +1,167 @@
+
+.project-page .project-intro {
+  margin-bottom: 50px;
+}
+
+.project-page .project-title {
+  margin-bottom: 10px;
+  font-family: 'Gilroy-Bold';
+  font-size: 24px;
+  color: $color-green;
+  text-align: left;
+}
+
+.project-page .project-description {
+  margin-bottom: 25px;
+}
+
+.project-page .capabilities-list {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  
+  li {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+.project-page .project-photo {
+  margin-bottom: 6.5%;
+}
+
+.project-page .footer-blurb {
+  @include breakpoint(xs) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include breakpoint(sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include breakpoint(md) {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  } 
+}
+
+.project-share-buttons {
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+}
+
+.project-share-buttons a {
+  display: inline-block;
+  vertical-align: text-top;
+  padding: 0 10px 0;
+  font-size: 20px;
+}
+
+
+// Pagination
+$pagination-height: 317px;
+
+.pagination {
+  height: $pagination-height;
+  margin-top: 75px;
+  margin-bottom: -100px;
+  position: relative;
+}
+
+.pagination-left,
+.pagination-right {
+  position: absolute;;
+  top: 0;
+  width: calc(50% - 15px);
+  height: $pagination-height;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -($pagination-height * 2);
+  transition: background-position 1s;
+  z-index: 1;
+  
+  &:hover {
+    @include breakpoint(xs) {
+      background-position-y: -($pagination-height * 2);
+    }
+    
+    @include breakpoint(sm) {
+      background-position-y: -($pagination-height * 2);
+    }
+    
+    @include breakpoint(md) {
+      background-position-y: 50%;
+    }
+  }
+}
+
+.pagination-left {
+  left: 15px;
+}
+
+.pagination-right {
+  right: 15px;
+}
+
+.pagination-content {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 2;
+}
+
+.pagination-button {
+  height: $pagination-height;
+  padding-top: 140px;
+  
+  @include breakpoint(xs) {
+    width: calc(100% - 8.333% - 5px);
+  }
+  
+  @include breakpoint(sm) {
+    width: calc(100% - 8.333% - 45px);
+  }
+  
+  &.button-left {
+    float: left;
+  }
+  
+  &.button-left .pagination-button-text {
+    text-align: right;
+  }
+
+  &.button-right {
+    float: right;
+  }
+  
+  &.button-right .pagination-button-text {
+    text-align: left;
+  }
+}
+
+.pagination-button-title {
+  font-family: 'Gilroy-Bold';
+  
+  @include breakpoint(xs) {
+    font-size: 32px;
+  }
+  
+  @include breakpoint(sm) {
+    font-size: 36px;
+  }
+}
+
+.pagination-button-subtitle {
+  margin-top: 13px;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+}
+
+.pagination-button-subtext {
+  margin-top: 5px;
+  font-size: 18px;
+  
+  .project-services-divider:last-child {
+    display: none;
+  }
+}

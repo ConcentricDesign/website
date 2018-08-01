@@ -1,0 +1,81 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title == "Homepage" %}
+      {{ site.title }}
+    {% else %}
+      {% if page.title %}{{ page.title }}{% endif %} | {{ site.title }}
+    {% endif %}
+  </title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta property="og:title" content="{% if page.title == "Homepage" %}{{ site.title }}{% else %}{% if page.title %}{{ page.title }}{% endif %} | {{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
+  {% if page.og_image %}
+    <meta property="og:image" content="{{ page.og_image | prepend: site.baseurl | prepend: site.url }}" />
+  {% elsif page.layout == 'project' %}
+    <meta property="og:image" content="{{ page.cover_photo | prepend: site.baseurl | prepend: site.url }}" />
+  {% else %}
+    <meta property="og:image" content="{{ site.logo_png_image | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image:width" content="147" />
+    <meta property="og:image:height" content="91" />
+  {% endif %}
+
+  <link rel="stylesheet" href="/css/application.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/resources/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/resources/favicons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Concentric Design"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/resources/favicons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/resources/favicons/mstile-150x150.png" />
+  <meta name="msapplication-square310x310logo" content="/resources/favicons/mstile-310x310.png" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+  <script type="text/javascript" src="/js/validator.min.js" defer></script>
+  <script type="text/javascript" src="/js/application.js" defer></script>
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "{{ site.title }}",
+      "url" : "{{ site.url }}",
+      "logo": "{{ site.logo_png_image | prepend: site.baseurl | prepend: site.url }}",
+      "sameAs" : [
+        {% if site.social_accounts.facebook %}
+          "https://facebook.com/{{ site.social_accounts.facebook }}",
+        {% endif %}
+        {% if site.social_accounts.instagram %}
+          "https://instagram.com/{{ site.social_accounts.instagram }}",
+        {% endif %}
+        {% if site.social_accounts.twitter %}
+          "https://twitter.com/{{ site.social_accounts.twitter }}",
+        {% endif %}
+        {% if site.social_accounts.linkedin %}
+          "https://linkedin.com/company/{{ site.social_accounts.linkedin }}"
+        {% endif %}
+      ]
+    }
+  </script>
+
+</head>

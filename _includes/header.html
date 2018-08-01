@@ -1,0 +1,18 @@
+<header class="header">
+
+  <div class="container clearfix">
+    <div class="right">
+      <div class="menu-label js-menuToggle clickable">
+        <div class="menu-label-text visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">Menu</div>
+        {% include animated-menu-button.html %}
+      </div>
+    </div>
+    {% include nav-modal.html %}
+    
+    <a href="/" title="{{ site.title }}" class="js-headerLogo clickable">
+      <img class="logo visible-xs-inline-block" src="{{ site.logo_horizontal_image }}" />
+      <img class="logo visible-sm-inline-block visible-md-inline-block visible-lg-inline-block" src="{{ site.logo_image }}" />
+    </a>
+  </div>
+
+</header>

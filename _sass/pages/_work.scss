@@ -1,0 +1,85 @@
+
+.project-filter-group {
+  margin-bottom: 50px;
+  padding: 35px;
+  background-color: $color-black;
+  text-align: center;
+}
+
+.project-filter-container {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @include breakpoint(xs) {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+.project-filter {
+  display: inline;
+  font-family: 'Gilroy-Bold';
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  
+  &:hover,
+  &.is-active {
+    background-size: calc(100% + 7px) 6px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+  }
+  
+  &.is-active {
+    cursor: default;
+  }
+  
+  &.link-color-blue:hover,
+  &.link-color-blue.is-active {
+    background-image: -webkit-linear-gradient($color-blue, $color-blue);
+    background-image: linear-gradient($color-blue, $color-blue);
+  }
+  
+  &.link-color-green:hover,
+  &.link-color-green.is-active {
+    background-image: -webkit-linear-gradient($color-green, $color-green);
+    background-image: linear-gradient($color-green, $color-green);
+  }
+  
+  &.link-color-pink:hover,
+  &.link-color-pink.is-active {
+    background-image: -webkit-linear-gradient($color-pink, $color-pink);
+    background-image: linear-gradient($color-pink, $color-pink);
+  }
+}
+
+.project-item {
+  margin-bottom: 100px;
+  
+  @include breakpoint(xs) {
+    margin-bottom: 50px;
+  }
+}
+
+.project-item .project-cover {
+  margin-bottom: 30px;
+}
+
+.project-list h1 {
+  margin-bottom: 25px;
+  text-align: left;
+  overflow: hidden;
+
+  @include breakpoint(xs) {
+    font-size: 36px;
+  }
+  
+  @include breakpoint(sm) {
+    font-size: 60px;
+  }
+}

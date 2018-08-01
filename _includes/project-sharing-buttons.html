@@ -1,0 +1,27 @@
+
+<div class="project-share-buttons">
+  <span class="label">Share this project: </span>
+
+  <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+    <i class="fa fa-facebook"></i>
+  </a>
+  
+  {% if page.social_sharing_text.twitter %}
+    {% assign tweet_text = page.social_sharing_text.twitter %}
+  {% else %}
+    {% assign tweet_text = page.title %}
+  {% endif %}
+  <a href="https://twitter.com/intent/tweet?text={{ tweet_text | url_encode }}&url={{ page.url | prepend: site.url }}" target="_blank">
+    <i class="fa fa-twitter"></i>
+  </a>
+  
+  {% if page.social_sharing_text.linkedin %}
+    {% assign linkedin_text = page.social_sharing_text.linkedin %}
+  {% else %}
+    {% assign linkedin_text = page.title %}
+  {% endif %}
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.url }}&title={{ linkedin_text | url_encode }}&source={{ site.url }}" target="_blank">
+    <i class="fa fa-linkedin-square"></i>
+  </a>
+
+</div>

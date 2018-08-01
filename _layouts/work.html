@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<script type="text/javascript" src="/js/filter.js" defer></script>
+
+{% include scrolltop-button.html %}
+
+<div class="container">
+  <div class="row">
+    {{ page.title_md | markdownify }}
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
+      {{ page.content_md | markdownify }}
+    </div>
+  </div>
+</div>
+
+<div class="project-filter-group">
+  <div class="container">
+    {% assign sorted_filters = page.filters | sort:"position" %}
+    {% for filter in sorted_filters %}
+      <div class="project-filter-container">
+        <div data-controls-filter="{{ filter.name }}" class="js-filterLink project-filter link-color-{{ filter.link_color }}">{{ filter.label }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<main class="project-list">
+  {% assign sorted_projects = site.work | sort:"position" %}
+  {% for project in sorted_projects %}
+    <section class="bare project-item js-project{% for group in project.service_groups %} js-projectType-{{ group.name | downcase }}{% endfor %}">
+      <a href="{{ project.url }}">
+        <img src="{{ project.cover_photo }}" class="project-cover img-outset">
+      </a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-offset-1 col-md-5">
+          <h1>
+            <a href="{{ project.url }}" class="link link-green project-title">{{ project.name }}</a>
+          </h1>
+          </div>
+          <div class="col-sm-12 col-md-6 visible-sm-block visible-md-block visible-lg-block">
+            <div class="row">
+              {% for group in project.service_groups %}
+                <div class="col-sm-4">
+                  <div class="list-title">{{ group.name }}</div>
+                  <ul>
+                    {% for service in group.capabilities %}
+                      <li>{{ service }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endfor %}
+</main>

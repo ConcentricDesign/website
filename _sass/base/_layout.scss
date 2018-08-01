@@ -1,0 +1,117 @@
+
+.page-borders .pb {
+  position: fixed;
+  border-color: $color-black;
+  background: transparent;
+  z-index: 999;
+}
+  .pb.pb-t,
+  .pb.pb-b {
+    left: 0;
+    right: 0;
+    border-top: 15px solid;
+  }
+
+  .pb.pb-l,
+  .pb.pb-r {
+    top: 0;
+    bottom: 0;
+    border-left: 15px solid;
+  }
+
+  .pb.pb-t { top: 0; }
+  .pb.pb-b { bottom: 0; }
+  .pb.pb-l { left: 0; }
+  .pb.pb-r { right: 0; }
+
+
+  // Offset all body content due to page border
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+.page-content {
+  padding-bottom: 100px;
+  
+  @include breakpoint(xs) {
+    padding-top: 150px;
+  }
+  
+  @include breakpoint(sm) {
+    padding-top: 200px;
+  }
+  
+  @include breakpoint(md) {
+    padding-top: 200px;
+  }
+  
+  @include breakpoint(lg) {
+    padding-top: 252px;
+  }
+}
+
+section {
+  border-bottom: 15px solid $color-black;
+  padding-top: 145px;
+  padding-bottom: 145px;
+  
+  &.hero {
+    padding-top: 0;
+  }
+  
+  &.bare {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  
+  &:last-child {
+    margin-bottom: -100px;
+  }
+  
+  &:last-child.bare {
+    padding-bottom: 100px;
+  }
+
+  .section-footer {
+    margin-top: 72px;
+    text-align: center;
+  }
+}
+
+.bg-green {
+  background-color: $color-green-faded;
+}
+
+.bg-green-faded {
+  background-color: $color-green-faded;
+}
+
+.bg-blue {
+  background-color: $color-blue;
+}
+
+.bg-blue-faded {
+  background-color: $color-blue-faded;
+}
+
+.bg-pink {
+  background-color: $color-pink;
+}
+
+.bg-pink-faded {
+  background-color: $color-pink-faded;
+}
+
+.bg-black {
+  background-color: $color-black;
+  color: white;
+}
+  section.bg-black {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .bg-black h1 {
+    color: white;
+  }
