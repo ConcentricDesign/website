@@ -12,7 +12,7 @@ sections:
     specifically tailored to meet small business needs on small business budgets.
     Whether your business is just starting up or you’re an established company looking
     to strengthen your brand, we’re here to help.</p>
-  content_photo: "/uploads/working_together_cards.jpg"
+  content_photo: "/uploads/small_business_graphic_design.jpg"
 - services:
   - title: Identity
     image: "/uploads/capabilities_identity.png"
