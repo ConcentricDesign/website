@@ -66,7 +66,7 @@ sections:
   projects:
   - name: Great Lakes Representatives
     photo: "/uploads/Portfolio_GLR_Cover-Portfolio.png"
-    project_link: "/work/glr"
+    project_link: '"/work/glr" target="_blank"'
     description: A small business with 30 years of history wanted to update and standardize
       their visual identity.
   - name: Venn's Woodland Resort
