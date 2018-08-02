@@ -2,7 +2,6 @@
 title: Small Business Package
 date: 2018-06-08 08:57:00 -05:00
 permalink: "/small-business-package/"
-published: false
 show_in_nav: false
 sections:
 - name: hero
