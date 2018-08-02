@@ -1,7 +1,7 @@
 ---
-title: Small Business Package
+title: Small Business Identity & Website Design
 date: 2018-06-08 08:57:00 -05:00
-permalink: "/small-business-package/"
+permalink: "/small-business/"
 show_in_nav: false
 sections:
 - name: hero
