@@ -5,7 +5,7 @@ permalink: "/small-business/"
 show_in_nav: false
 sections:
 - name: hero
-  bg_color_name: 
+  bg_color_name:
   title_md: "# Big design. Small business price."
   content_md: <p class="bigger">Concentric Design offers web and graphic design services
     specifically tailored to meet small business needs on small business budgets.
@@ -43,7 +43,7 @@ sections:
     - Analytics
     - 30-minute training session
   name: what_we_do
-  bg_color_name: 
+  bg_color_name:
   title_md: "# What's included?"
   content_md: <p class="bigger">Our small business visual identity and website design
     service starts at $5,000 and includes custom logo design, establishing a look
@@ -71,14 +71,13 @@ sections:
       their visual identity.
   - name: Venn's Woodland Resort
     photo: "/uploads/Portfolio_Venns-Cover-Portfolio.png"
-    project_link: "/work/venns-woodland-resort"
+    project_link: "/work/venns"
     description: This family-run lakefront resort needed a content-managed site and
       a redesigned identity.
 - name: get_started
   bg_color_name: green-faded
   title_md: <h1 class="mb-0">View our full <a href="/work" class="link link-green"
     target="_blank">portfolio</a>.</h1>
-  content_md: 
+  content_md:
 layout: small-business
 ---
-

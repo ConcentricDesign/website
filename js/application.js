@@ -147,7 +147,7 @@ $(document).ready(function(){
     // different breakpoints. We only need the currently visible ones.
     var selector = {
       forAboutPage: ".page-content.About",
-      forSmallBusinessPage: ".page-content.Small.Business.Package",
+      forSmallBusinessPage: ".page-content.Small.Business.Identity.Website.Design",
       forAnimatedBars: ".js-animatedBar",
       forAnimatedBoxes: ".js-animatedAccentBox:visible"
     };
