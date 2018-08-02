@@ -71,7 +71,7 @@ sections:
       their visual identity.
   - name: Venn's Woodland Resort
     photo: "/uploads/Portfolio_Venns-Cover-Portfolio.png"
-    project_link: '"/work/venns" target="_blank"'
+    project_link: /work/venns target="_blank"
     description: This family-run lakefront resort needed a content-managed site and
       a redesigned identity.
 - name: get_started
