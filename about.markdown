@@ -151,6 +151,7 @@ sections:
   - "/uploads/client_netrix.png"
   - "/uploads/client_paylocity.png"
   - "/uploads/client_qholding.png"
+  - "/uploads/client_sun-foundation.png"
   - "/uploads/client_taskfully.png"
   - "/uploads/client_tfa.png"
   - "/uploads/client_tetravx.png"
