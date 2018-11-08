@@ -5,8 +5,8 @@ permalink: "/work/sun-foundation"
 published: false
 categories:
 - Identity
-- Print
 - Digital
+- Print
 tags:
 - featured
 name: Sun Foundation
