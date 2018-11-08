@@ -14,10 +14,9 @@ description: Burwood Group is a technology consulting firm and systems integrato
   updated their color palette, and created detailed brand guidelines. Additionally,
   we implemented the new identity into a custom Squarespace website.
 service_groups:
-- name: Print
+- name: Identity
   capabilities:
-  - Promotional Materials
-  - Electronic Newsletter
+  - Identity Development
   - Creative Direction
   - Illustration
 - name: Digital
