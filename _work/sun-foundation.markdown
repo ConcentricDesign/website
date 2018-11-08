@@ -14,13 +14,25 @@ lead: Visual identity, responsive web, and print design for a very colorful even
   management company.
 description: Description here
 service_groups:
+- name: Identity
+  capabilities:
+  - Brand Strategy
+  - Logo & Identity
+  - Brand Style Guides
+  - Creative Direction
+  - Copywriting
+- name: Digital
+  capabilities:
+  - Custom Squarespace Design
+  - Information Architecture
+  - Social Media
+  - Electronic Newsletter
+  - Annual Report
 - name: Print
   capabilities:
   - Stationery System
   - Promotional Materials
   - Publications
-  - Electronic Newsletter
-  - Annual Report
 cover_photo: "/uploads/Portfolio_SunFoundation-Cover-Portfolio.png"
 photos:
 - "/uploads/Portfolio_SunFoundation-Cover-Project.png"
