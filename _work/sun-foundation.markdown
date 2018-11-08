@@ -2,7 +2,6 @@
 title: Sun Foundation
 date: 2018-11-08 14:07:00 -06:00
 permalink: "/work/sun-foundation"
-published: false
 categories:
 - Identity
 - Digital
