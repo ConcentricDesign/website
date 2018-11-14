@@ -22,5 +22,6 @@ photos:
 quote:
   attribution: "– Joan Root Ericksen, Founder & Development Director"
   text: Quote
+layout: project
 ---
 
