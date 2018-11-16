@@ -27,10 +27,12 @@ cover_photo: "/uploads/Portfolio_NetrixCover---Portfolio.png"
 photos:
 - "/uploads/Portfolio_NetrixCover-Project.png"
 - "/uploads/Portfolio_NetrixLogos.png"
+- "/uploads/Portfolio_Netrix-Sales-Slick.png"
+- "/uploads/Portfolio_Netrix_Animation.gif"
+- "/uploads/Portfolio_Netrix-Sales-Slick2.png"
 - "/uploads/Portfolio_NetrixNKO1.png"
 - "/uploads/Portfolio_NetrixNKO2.png"
 - "/uploads/Portfolio_NetrixNKO3.png"
-- "/uploads/Portfolio_Netrix_Animation.gif"
 - "/uploads/Portfolio_NetrixPatterns.png"
 layout: project
 ---
