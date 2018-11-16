@@ -8,6 +8,7 @@ categories:
 - Print
 tags:
 - featured
+position: 2
 name: Sun Foundation
 lead: Visual identity, responsive web, and print design for a very colorful event
   management company.

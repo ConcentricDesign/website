@@ -5,7 +5,7 @@ permalink: "/work/voxconnect/"
 categories:
 - Identity
 - Digital
-position: 13
+position: 14
 name: VoxConnect
 description: |-
   VoxConnect is a cloud-based VoIP phone provider serving Chicago’s small business community.
