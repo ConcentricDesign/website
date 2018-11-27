@@ -11,9 +11,12 @@ tags:
 - featured
 position: 0
 name: Sun Foundation
-lead: Visual identity, responsive web, and print design for a very colorful event
-  management company.
-description: Description
+lead: Visual identity, Squarespace website, and print design for an art and environmental
+  sciences non-profit.
+description: |
+  The Sun Foundation is a non-profit founded in Central Illinois in 1973. It provides art and environmental sciences programing and services to a rural, underserved community. Their programs and services vary from a weeklong day camp in the woods full of art and science programing, to a weekend celebration promoting clean water, re-granting of funds to local arts programs, and smaller workshops promoting connections to the environment and arts.
+  Every year we commit a portion of our time and resources to causes or services that create a better world for us to live in. We believe good design paired with organizations that are doing good can have a lasting impact on our communities.
+  We approached the Sun Foundation to develop a comprehensive identity that is a more accurate reflection of who they are as they entered their 45th year of programing. We developed their new identity from the ground up and executed it through various collateral as well as an entirely reorganized website with a new focus on their community and impact, and improved program registration and donation capabilities.
 service_groups:
 - name: Identity
   capabilities:
@@ -47,7 +50,8 @@ photos:
 - "/uploads/Portfolio_SunFoundation-Guidelines.png"
 quote:
   attribution: "– Joan Root Ericksen, Founder & Development Director"
-  text: Quote
+  text: The Sun Foundation has never felt so bright. I am pinching myself, overwhelmed
+    with joy and gratitude for the amazing work of Concentric Design!
 layout: project
 ---
 
