@@ -43,6 +43,7 @@ photos:
 - "/uploads/Portfolio_SunFoundation-Magazine-Spreads.png"
 - "/uploads/Portfolio_SunFoundation-Icons.png"
 - "/uploads/Portfolio_SunFoundation-Brochure.png"
+- "/uploads/Portfolio_SunFoundation-Bus-Ad.png"
 - "/uploads/Portfolio_SunFoundation-Guidelines.png"
 quote:
   attribution: "– Joan Root Ericksen, Founder & Development Director"
