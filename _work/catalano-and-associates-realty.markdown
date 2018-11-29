@@ -2,7 +2,6 @@
 title: Catalano & Associates Realty
 date: 2018-11-16 12:17:00 -06:00
 permalink: "/work/catalano-realty/"
-published: false
 categories:
 - Identity
 - Print
