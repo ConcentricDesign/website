@@ -14,8 +14,8 @@ name: Sun Foundation
 lead: Visual identity, Squarespace website, and print design for an art and environmental
   sciences non-profit.
 description: |
-  The Sun Foundation is a non-profit founded in Central Illinois in 1973. It provides art and environmental sciences programing and services to a rural, underserved community. Their programs and services vary from a weeklong day camp in the woods full of art and science programing, to a weekend celebration promoting clean water, re-granting of funds to local arts programs, and smaller workshops promoting connections to the environment and arts.
-  Every year we commit a portion of our time and resources to causes or services that create a better world for us to live in. We believe good design paired with organizations that are doing good can have a lasting impact on our communities.
+  The Sun Foundation is a non-profit that provides art and environmental sciences programing in Central Illinois. Their programs and services vary from a weeklong day camp in the woods full of art and science programing, to a weekend celebration promoting clean water, re-granting of funds to local arts programs, and smaller workshops promoting connections to the environment and arts.
+
   We approached the Sun Foundation to develop a comprehensive identity that is a more accurate reflection of who they are as they entered their 45th year of programing. We developed their new identity from the ground up and executed it through various collateral as well as an entirely reorganized website with a new focus on their community and impact, and improved program registration and donation capabilities.
 service_groups:
 - name: Identity
@@ -49,9 +49,12 @@ photos:
 - "/uploads/Portfolio_SunFoundation-Bus-Ad.png"
 - "/uploads/Portfolio_SunFoundation-Guidelines.png"
 quote:
-  attribution: "– Joan Root Ericksen, Founder & Development Director"
+  attribution: "– Joan Root Ericksen, Co-founder & Development Director"
   text: The Sun Foundation has never felt so bright. I am pinching myself, overwhelmed
     with joy and gratitude for the amazing work of Concentric Design!
+outro_text: Every year we commit a portion of our time and resources to causes or
+  services that create a better world for us to live in. We believe good design paired
+  with organizations that are doing good can have a lasting impact on our communities.
 layout: project
 ---
 
