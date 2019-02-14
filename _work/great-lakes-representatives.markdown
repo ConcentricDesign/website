@@ -6,7 +6,7 @@ categories:
 - Identity
 - Digital
 - Print
-position: 6
+position: 7
 name: Great Lakes Representatives
 description: Great Lakes Representatives provides sales representation, data analysis,
   and field service support to manufacturing and retail clients. We updated and standardized

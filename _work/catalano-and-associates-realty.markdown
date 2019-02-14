@@ -5,7 +5,7 @@ permalink: "/work/catalano-realty/"
 categories:
 - Identity
 - Print
-position: 5
+position: 6
 name: Catalano & Associates Realty
 description: Catalano & Associates Realty has been serving greater Chicagoland for
   over 30 years. With a transition to new leadership and new markets, they came to
