@@ -16,6 +16,7 @@ service_groups:
   capabilities:
   - Logo & Identity
   - Creative Direction
+  - Photography
 - name: Digital
   capabilities:
   - Custom CMS Template Design
@@ -24,6 +25,8 @@ photos:
 - "/uploads/Portfolio_Venns-Cover-Project.png"
 - "/uploads/Portfolio_Venns-Website.png"
 - "/uploads/Portfolio_Venns-Website-2-.png"
+- "/uploads/Portfolio_Venns-Photography-2.png"
 - "/uploads/Portfolio_Venns-Icons.png"
+- "/uploads/Portfolio_Venns-Photography-1.png"
 ---
 
