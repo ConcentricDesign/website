@@ -12,10 +12,7 @@ position: 0
 name: Sun Foundation
 lead: Visual identity, Squarespace website, and print design for an art and environmental
   sciences non-profit.
-description: |
-  The Sun Foundation is a non-profit that provides art and environmental sciences programing in Central Illinois. Their programs and services vary from a weeklong day camp in the woods full of art and science programing, to a weekend celebration promoting clean water, re-granting of funds to local arts programs, and smaller workshops promoting connections to the environment and arts.
-
-  We approached the Sun Foundation to develop a comprehensive identity that is a more accurate reflection of who they are as they entered their 45th year of programing. We developed their new identity from the ground up and executed it through various collateral as well as an entirely reorganized website with a new focus on their community and impact, and improved program registration and donation capabilities.
+description: More descriptions
 service_groups:
 - name: Identity
   capabilities:
