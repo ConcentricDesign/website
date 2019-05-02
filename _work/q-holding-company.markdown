@@ -4,7 +4,7 @@ date: 2016-11-29 10:28:00 -06:00
 permalink: "/work/q-holding-company/"
 categories:
 - Digital
-position: 11
+position: 12
 name: Q Holding Company
 description: |-
   Q Holding Company is a global family of industrial rubber producers. They make seals, grommets, insulators, tubes, and many other products that can be found in cars, hospitals, and even space ships!

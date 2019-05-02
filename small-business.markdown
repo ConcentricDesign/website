@@ -64,16 +64,16 @@ sections:
 - name: portfolio
   title_md: "# Recent projects"
   projects:
-  - name: Great Lakes Representatives
-    photo: "/uploads/Portfolio_GLR_Cover-Portfolio.png"
-    project_link: "/work/glr/"
-    description: A small business with 30 years of history wanted to update and standardize
-      their visual identity.
-  - name: Venn's Woodland Resort
-    photo: "/uploads/Portfolio_Venns-Cover-Portfolio.png"
-    project_link: "/work/venns/"
-    description: This family-run lakefront resort needed a content-managed site and
-      a redesigned identity.
+  - name: Ramsey Lewis
+    photo: "/uploads/Portfolio_Ramsey-Lewis_Cover-Portfolio.png"
+    project_link: "/work/ramsey-lewis/"
+    description: Chicago-born pianist and jazz legend Ramsey Lewis was in a need of
+      a website refresh and was also looking for a new logo treatment for his name.
+  - name: Lucidia IT
+    photo: "/uploads/Portfolio_Lucidia-IT-Cover-Portfolio.png"
+    project_link: "/work/lucidia-it/"
+    description: This growing woman-owned IT service provider was interested in improving
+      and standardizing their brand identity.
 - name: get_started
   bg_color_name: green-faded
   title_md: <h1 class="mb-0">View our full <a href="/work" class="link link-green"
