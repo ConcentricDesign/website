@@ -6,7 +6,7 @@ categories:
 - Identity
 - Digital
 - Print
-position: 16
+position: 17
 name: Chicago Child Care Society
 description: "Since 1849, Chicago Child Care Society (CCCS) has served Chicago’s children
   and families. Located in Hyde Park, CCCS is the oldest continually operating child

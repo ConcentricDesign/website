@@ -6,7 +6,7 @@ categories:
 - Identity
 - Digital
 - Print
-position: 14
+position: 15
 name: United Cargo
 description: "United Cargo, part of United Airlines, is an air cargo service that
   provides shipping and business solutions.\n\nIn 2015, the United Cargo marketing

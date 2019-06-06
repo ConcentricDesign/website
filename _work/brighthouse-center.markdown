@@ -5,6 +5,7 @@ permalink: "/work/brighthouse/"
 categories:
 - Identity
 - Digital
+position: 1
 name: Brighthouse Center
 description: Brighthouse Diagnostic and Treatment Center is a new Chicago-based clinic
   that provides diagnostics and therapy, focusing on children with developmental differences.

@@ -7,7 +7,7 @@ categories:
 - Print
 tags:
 - featured
-position: 4
+position: 5
 name: TetraVX
 lead: Visual identity for a new business communication platform.
 description: TetraVX is an interoperable Unified Communications platform for businesses
