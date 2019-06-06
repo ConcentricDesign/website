@@ -4,7 +4,7 @@ date: 2016-11-20 23:22:00 -06:00
 permalink: "/work/united-airlines/"
 categories:
 - Digital
-position: 16
+position: 17
 name: United Airlines
 lead: Experience and visual design for iOS and Android mobile application.
 description: 'United Airlines operates an average of nearly 5,000 flights a day to

@@ -8,7 +8,7 @@ categories:
 - Print
 tags:
 - featured
-position: 10
+position: 11
 name: The Huestudio + Company
 lead: Visual identity, responsive web, and print design for a very colorful event
   management company.

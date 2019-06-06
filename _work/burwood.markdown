@@ -6,7 +6,7 @@ categories:
 - Identity
 - Digital
 - Print
-position: 4
+position: 5
 name: Burwood Group
 description: Burwood Group is a technology consulting firm and systems integrator.
   After 20 years in business, they were interested in updating and further defining
