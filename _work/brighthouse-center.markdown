@@ -18,5 +18,12 @@ service_groups:
 - name: Digital
   capabilities:
   - Custom Squarespace Design
+cover_photo: "/uploads/Portfolio_Brighthouse-Cover-Portfolio.png"
+photos:
+- "/uploads/Portfolio_Brighthouse-Cover-Project.png"
+- "/uploads/Portfolio_Brighthouse-Website.png"
+- "/uploads/Portfolio_Brighthouse-Type.png"
+- "/uploads/Portfolio_Brighthouse-Color.png"
+- "/uploads/Portfolio_Brighthouse-Website-Pages.png"
 ---
 
