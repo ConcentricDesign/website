@@ -5,7 +5,7 @@ permalink: "/work/resolute-health/"
 categories:
 - Identity
 - Digital
-position: 2
+position: 1
 name: Resolute Health
 description: Resolute Health sends volunteer physicians to remote global communities
   in need of assistance. This non-profit came to us having outgrown their previous
