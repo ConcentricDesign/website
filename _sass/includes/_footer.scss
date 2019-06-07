@@ -7,15 +7,15 @@
 
 .site-footer .logo {
   margin-bottom: 30px;
-  
+
   @include breakpoint(xs) {
     width: 152px;
   }
-  
+
   @include breakpoint(xs) {
     width: 176px;
   }
-  
+
   @include breakpoint(md) {
     width: 202px;
   }
@@ -31,6 +31,10 @@
 .site-description {
   font-size: 18px;
   line-height: 1.3;
+}
+
+.site-description .space-after {
+  margin-bottom: 10px;
 }
 
 .site-legal {
@@ -55,7 +59,7 @@ input[type="email"].mailing-list-input {
   font-family: 'Gilroy-Regular';
   font-size: 18px;
   line-height: 32px;
-  
+
   &,
   &:hover,
   &:focus {
@@ -64,7 +68,7 @@ input[type="email"].mailing-list-input {
     background: transparent;
     outline: none;
   }
-  
+
   &:disabled {
     opacity: 0.5;
   }
@@ -97,7 +101,7 @@ input[type="email"].mailing-list-input {
   $check-width: $check-height/2;
   $check-left: $circle-size/4;
   $check-thickness: $circle-size/10;
-  
+
   position: relative;
   float: right;
   display: inline-block;
@@ -142,17 +146,17 @@ input[type="email"].mailing-list-input {
       width: $circle-size;
       color: $color-green;
     }
-    
+
     .submit-thanks-icon {
       display: inline-block;
     }
-    
+
     .submit-thanks-text {
       margin-left: 10px;
       width: 58px;
       opacity: 1;
     }
-    
+
     .submit-thanks-icon:after {
       -webkit-animation-delay: 100ms;
       -moz-animation-delay: 100ms;
@@ -175,7 +179,7 @@ input[type="email"].mailing-list-input {
     }
 
     .submit-thanks-icon:after {
-      height: $check-height; 
+      height: $check-height;
       width: $check-width;
       -webkit-transform-origin: left top;
       -moz-transform-origin: left top;
@@ -183,7 +187,7 @@ input[type="email"].mailing-list-input {
       -o-transform-origin: left top;
       transform-origin: left top;
       border-right: $check-thickness solid white;
-      border-top: $check-thickness solid white; 
+      border-top: $check-thickness solid white;
       content: '';
       left: $check-left;
       top: $check-height + 1;
@@ -197,16 +201,16 @@ input[type="email"].mailing-list-input {
     margin-top: 25px;
     text-align: left;
   }
-  
+
   @include breakpoint(sm) {
     margin-top: 25px;
   }
-  
+
   @include breakpoint(md) {
     margin-top: 0;
     text-align: right;
   }
-  
+
   @include breakpoint(lg) {
     margin-top: 0;
   }
