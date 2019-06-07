@@ -42,8 +42,8 @@ defaults:
     layout: project
 email: hello@concentric.design
 phone: 312 725 9509
-address-1: 1212 N. Ashland Ave. Floor 2
-address-2: Chicago, IL 60622
+address_1: 1212 N. Ashland Ave. Floor 2
+address_2: Chicago, IL 60622
 description: Concentric Design is a Chicago-based graphic design firm that specializes
   in visual identity, digital, and print design projects.
 baseurl: 
