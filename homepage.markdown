@@ -72,11 +72,11 @@ sections:
   - title: Nothing to learn, nothing to remember
     image: "/uploads/concierge-nothing-to-learn.png"
   - title: A beautiful design in no time
-    image: "/uploads/capability-graphic-digital.png"
+    image: "/uploads/concierge-beautiful-design.png"
   - title: All your updates, always up-to-date
-    image: "/uploads/capability-graphic-print.png"
+    image: "/uploads/concierge-always-up-to-date.png"
   - title: Features to propel your business
-    image: "/uploads/capability-graphic-identity.png"
+    image: "/uploads/concierge-propel-your-business.png"
   footer_md: <h2><a href="https://concierge.concentric.design" target="_blank" class="btn">Learn
     more</a></h2>
 og_image: "/uploads/concentric_design_ogshare.png"
