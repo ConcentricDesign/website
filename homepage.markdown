@@ -6,7 +6,7 @@ position: 0
 show_in_nav: false
 sections:
 - name: hero
-  bg_color_name:
+  bg_color_name: 
   title_md: |-
     <h1>
             <div>Good design means</div>
@@ -45,9 +45,9 @@ sections:
   footer_md: <h2><a href="/about" class="link link-blue">Learn more</a> about what
     we can do.</h2>
 - name: work
-  bg_color_name:
-  title_md:
-  content_md:
+  bg_color_name: 
+  title_md: 
+  content_md: 
   footer_md: <h2><a href="/work" class="link link-blue">Go to</a> all projects.</h2>
 - name: call_to_action
   bg_color_name: green-faded
@@ -57,7 +57,7 @@ sections:
     {: .bigger .text-center }
   footer_md: <h2><a href="/contact" class="btn">Start a project</a></h2>
 - name: concierge
-  bg_color_name:
+  bg_color_name: 
   title_md: |-
     <h1>
             <div>Concierge title</div>
@@ -82,3 +82,4 @@ sections:
 og_image: "/uploads/concentric_design_ogshare.png"
 layout: homepage
 ---
+
