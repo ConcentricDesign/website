@@ -60,14 +60,13 @@ sections:
   bg_color_name: 
   title_md: |-
     <h1>
-            <div>Concierge title</div>
+            <div>Worry-free websites with</div>
             <div>
-              <a href="/about" class="link link-green">good business</a>.
+              <a href="https://concierge.concentric.design" target="_blank" class="link link-green">concierge service</a>.
             </div>
           </h1>
   content_md: |-
-    We know that good design means
-    good business. We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly, achieve marketing goals, and look fantastic.
+    Our new concierge subscription provides restaurant owners, startup founders, and other small organizations beautiful websites designed and maintained for a flat monthly fee.
     {: .bigger .text-center }
   features:
   - title: Nothing to learn, nothing to remember
@@ -78,7 +77,8 @@ sections:
     image: "/uploads/capability-graphic-print.png"
   - title: Features to propel your business
     image: "/uploads/capability-graphic-identity.png"
-  footer_md: <h2><a href="/contact" class="btn">Start a project</a></h2>
+  footer_md: <h2><a href="https://concierge.concentric.design" target="_blank" class="btn">Learn
+    more</a></h2>
 og_image: "/uploads/concentric_design_ogshare.png"
 layout: homepage
 ---
