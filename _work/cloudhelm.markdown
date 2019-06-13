@@ -5,7 +5,7 @@ permalink: "/work/cloudhelm/"
 categories:
 - Identity
 - Digital
-position: 13
+position: 14
 name: CloudHelm
 lead: Visual identity and responsive web design for a new cloud solutions company.
 description: CloudHelm offers flexible and centralized cloud computing services to

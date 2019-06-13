@@ -4,7 +4,7 @@ date: 2016-11-29 10:20:00 -06:00
 permalink: "/work/paylocity/"
 categories:
 - Digital
-position: 15
+position: 16
 name: Paylocity
 description: Paylocity is a cloud-based software company working to elevate payroll
   and HR from the backroom to the boardroom. We’ve worked with the Paylocity marketing

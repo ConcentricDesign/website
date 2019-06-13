@@ -6,6 +6,7 @@ published: false
 categories:
 - Identity
 - Digital
+position: 1
 name: Jan Lewis Designs
 service_groups:
 - name: Identity
