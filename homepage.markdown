@@ -62,7 +62,7 @@ sections:
     <h1>
             <div>Worry-free websites with</div>
             <div>
-              <a href="https://concierge.concentric.design" target="_blank" class="link link-green">concierge service</a>.
+              <a href="https://concierge.concentric.design" target="_blank" class="link link-blue">concierge service</a>.
             </div>
           </h1>
   content_md: |-
