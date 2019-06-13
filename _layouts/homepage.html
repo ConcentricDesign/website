@@ -14,13 +14,13 @@ layout: default
           {{ section.content_md | markdownify }}
         </div>
       </div>
-      
+
       {% case section.name %}
         {% when "hero" %}
           <div class="hero-capabilities">
             <div class="row">
               <div class="col-sm-12 col-md-10 col-md-offset-1">
-                
+
                 <div class="visible-xs-block visible-sm-block">
                   <div class="row">
                     {% assign sorted_services = section.capabilities | sort:"position" %}
@@ -41,7 +41,7 @@ layout: default
                     {% endfor %}
                   </div>
                 </div>
-                
+
                 <div class="visible-md-block visible-lg-block">
                   <div class="row">
                     {% assign sorted_services = section.capabilities | sort:"position" %}
@@ -67,20 +67,38 @@ layout: default
                     {% endfor %}
                   </div>
                 </div>
-              
+
               </div>
             </div>
           </div>
+
         {% when "work" %}
           {% include featured-work.html %}
-          
+
         {% when "dribbble_feed" %}
           {% include dribbble-feed.html %}
+
+        {% when "concierge" %}
+          <div class="hero-capabilities">
+            <div class="row">
+              <div class="concierge-features">
+                {% assign sorted_features = section.features | sort:"position" %}
+                {% for feature in sorted_features %}
+                  <div class="capability-module">
+                    <div class="capability-graphic">
+                      <img src="{{ feature.image }}" />
+                    </div>
+                    <h2 class="capability-title">{{ feature.title }}</h2>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
 
       {% endcase %}
       <div class="section-footer">
         {{ section.footer_md | markdownify }}
-      </div>      
+      </div>
     </div>
   </section>
 {% endfor %}
