@@ -6,7 +6,7 @@ position: 0
 show_in_nav: false
 sections:
 - name: hero
-  bg_color_name: 
+  bg_color_name:
   title_md: |-
     <h1>
             <div>Good design means</div>
@@ -45,9 +45,9 @@ sections:
   footer_md: <h2><a href="/about" class="link link-blue">Learn more</a> about what
     we can do.</h2>
 - name: work
-  bg_color_name: 
-  title_md: 
-  content_md: 
+  bg_color_name:
+  title_md:
+  content_md:
   footer_md: <h2><a href="/work" class="link link-blue">Go to</a> all projects.</h2>
 - name: call_to_action
   bg_color_name: green-faded
@@ -56,7 +56,29 @@ sections:
     We’d love to talk with you about your next creative endeavor. Send us a note or give us a call and let’s start a new project together.
     {: .bigger .text-center }
   footer_md: <h2><a href="/contact" class="btn">Start a project</a></h2>
+- name: concierge
+  bg_color_name:
+  title_md: |-
+    <h1>
+            <div>Concierge title</div>
+            <div>
+              <a href="/about" class="link link-green">good business</a>.
+            </div>
+          </h1>
+  content_md: |-
+    We know that good design means
+    good business. We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly, achieve marketing goals, and look fantastic.
+    {: .bigger .text-center }
+  features:
+  - title: Nothing to learn, nothing to remember
+    image: "/uploads/capability-graphic-identity.png"
+  - title: A beautiful design in no time
+    image: "/uploads/capability-graphic-digital.png"
+  - title: All your updates, always up-to-date
+    image: "/uploads/capability-graphic-print.png"
+  - title: Features to propel your business
+    image: "/uploads/capability-graphic-identity.png"
+  footer_md: <h2><a href="/contact" class="btn">Start a project</a></h2>
 og_image: "/uploads/concentric_design_ogshare.png"
 layout: homepage
 ---
-
