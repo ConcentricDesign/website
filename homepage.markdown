@@ -20,7 +20,7 @@ sections:
     {: .bigger .text-center }
   capabilities:
   - title: Identity.
-    image: "/uploads/capability-graphic-identity.png"
+    image: "/uploads/capability-identity.png"
     bg_color_name: blue-faded
     capabilities:
     - Brand Strategy
@@ -28,14 +28,14 @@ sections:
     - Brand Style Guides
     - Creative & Art Direction
   - title: Digital.
-    image: "/uploads/capability-graphic-digital.png"
+    image: "/uploads/capability-digital.png"
     capabilities:
     - UI/UX Strategy & Design
     - Responsive Design & Development
     - Web & Mobile Applications
     bg_color_name: pink-faded
   - title: Print.
-    image: "/uploads/capability-graphic-print.png"
+    image: "/uploads/capability-print.png"
     capabilities:
     - Stationery Systems
     - Promotional Materials
