@@ -70,7 +70,7 @@ sections:
     {: .bigger .text-center }
   features:
   - title: Nothing to learn, nothing to remember
-    image: "/uploads/capability-graphic-identity.png"
+    image: "/uploads/concierge-nothing-to-learn.png"
   - title: A beautiful design in no time
     image: "/uploads/capability-graphic-digital.png"
   - title: All your updates, always up-to-date
