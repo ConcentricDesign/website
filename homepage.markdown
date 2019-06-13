@@ -66,7 +66,7 @@ sections:
             </div>
           </h1>
   content_md: |-
-    Our new concierge subscription provides restaurant owners, startup founders, and other small organizations beautiful websites designed and maintained for a flat monthly fee.
+    Our new concierge subscription provides restaurant owners, startup founders, and other small organizations beautiful websites designed and maintained for a flat monthly fee. As a subscriber, you never have to learn how to design, manage, or update your website. Our concierge team will design your website in just 5 days and make unlimited content updates for you every month.
     {: .bigger .text-center }
   features:
   - title: Nothing to learn, nothing to remember
