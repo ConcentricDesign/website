@@ -69,8 +69,8 @@ sections:
     founders, and other small organizations beautiful websites designed and maintained
     for a flat monthly fee. \n{: .bigger .text-center }\nAs a subscriber, you never
     have to learn how to design, manage, or update your website. Our concierge team
-    will design your website in just 5 days and make unlimited content updates for
-    you every month.\n{: .bigger .text-center }"
+    will design your website in just five days and make unlimited content updates
+    for you every month.\n{: .bigger .text-center }"
   features:
   - title: Nothing to learn, nothing to remember
     image: "/uploads/concierge-nothing-to-learn.png"
