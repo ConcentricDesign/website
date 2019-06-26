@@ -64,11 +64,12 @@ sections:
 - name: portfolio
   title_md: "# Recent projects"
   projects:
-  - name: Ramsey Lewis
-    photo: "/uploads/Portfolio_Ramsey-Lewis_Cover-Portfolio.png"
-    project_link: "/work/ramsey-lewis/"
-    description: Chicago-born pianist and jazz legend Ramsey Lewis was in a need of
-      a website refresh and was also looking for a new logo treatment for his name.
+  - name: Brighthouse Diagnostic & Treatment Center
+    photo: "/uploads/Portfolio_Brighthouse-Cover-Portfolio.png"
+    project_link: "/work/brighthouse/"
+    description: We worked with the founders of this new clinic to name, brand, and
+      design a website for their organization in order to connect with the families
+      they serve.
   - name: Lucidia IT
     photo: "/uploads/Portfolio_Lucidia-IT-Cover-Portfolio.png"
     project_link: "/work/lucidia-it/"
