@@ -24,5 +24,7 @@ photos:
 - "/uploads/Portfolio_Lucidia-IT-Cover-Project.png"
 - "/uploads/Portfolio_Lucidia-IT-Website.png"
 - "/uploads/Portfolio_Lucidia-IT-Website-2.png"
+- "/uploads/Portfolio_Lucidia-IT-Color.png"
+- "/uploads/Portfolio_Lucidia-IT-Type.png"
 ---
 
