@@ -23,7 +23,7 @@ form_sections:
     placeholder: John Smith
   - unique_name: title
     type: text
-    required: 
+    required:
     label: 'Job Title:'
     placeholder: My Job Title
   - unique_name: email
@@ -36,6 +36,23 @@ form_sections:
     required: true
     label: 'Phone:'
     placeholder: "(•••) ••• ••••"
+  - type: checkbox_group
+    group_title: How did you find us?
+    checkboxes:
+    - unique_name: ref_clutch
+      label: Clutch
+    - unique_name: ref_facebook
+      label: Facebook
+    - unique_name: ref_google
+      label: Google
+    - unique_name: ref_instagram
+      label: Instagram
+    - unique_name: ref_twitter
+      label: Twitter
+    - unique_name: ref_yelp
+      label: Yelp
+    - unique_name: ref_other
+      label: Other
 - title: Your organization
   fields:
   - unique_name: biz_name
@@ -100,11 +117,10 @@ form_sections:
     required: false
     label: 'Briefly describe your project needs:'
     placeholder: Enter description here
-  - unique_name: completion_date
+  - unique_name: budget
     type: text
     required: false
     label: What is your budget for this project?
     placeholder: Dollar amount, or approximate
 layout: survey
 ---
-
