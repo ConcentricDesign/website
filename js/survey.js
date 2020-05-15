@@ -6,17 +6,18 @@ ConcentricSurveyForm = (function() {
     forHasError: "has-error",
     forFormElementsContainer: "js-formElements",
   };
-  
+
   var attributeName = {
     forRequiredField: "required",
     forValidationCheck: "data-validated"
   };
-  
+
   var selector = {
     forForm: ".js-surveyForm",
     forFormElementsContainer: "." + className.forFormElementsContainer,
     forFieldContainer: ".js-fieldContainer",
     forSubmitButton: ".js-submitForm",
+    forSuccessScreenUrl: '.js-nextField',
     forBotTrapField: ".js-trapField",
     forEmailField: "input[type='email'][required]",
     forUrlField: "input[type='url']",
@@ -29,7 +30,7 @@ ConcentricSurveyForm = (function() {
   function _setupSurveyFormBindings() {
     var $form = $(selector.forFormElementsContainer);
     var fields = [];
-    
+
     function _cacheElement(i, el) { fields.push($(el)); }
     $form.find("input:not([type='checkbox'])").each(_cacheElement);
     $form.find("textarea").each(_cacheElement);
@@ -38,9 +39,9 @@ ConcentricSurveyForm = (function() {
       _bindFieldHasValueState($el);
       _bindFieldHasFocusState($el);
     });
-    
+
     $form.on("keyup", "[" + attributeName.forRequiredField + "][" + attributeName.forValidationCheck + "]", _generalRequiredFieldValidations);
-    
+
     // Email field special validation
     $form.on("keyup", selector.forEmailField +"[" + attributeName.forValidationCheck + "]", _emailFieldChangeValidations);
     $form.on("blur", selector.forEmailField, function() {
@@ -49,86 +50,86 @@ ConcentricSurveyForm = (function() {
         _emailFieldChangeValidations.call(this);
       }
     });
-    
+
     // Url field special validation
     $form.on("keyup", selector.forUrlField + "[" + attributeName.forValidationCheck + "]", _urlFieldValidations);
     $form.on("blur", selector.forUrlField, function() {
       if ($(this).val().trim()) {
-        _markFirstFieldValidation($(this));  
+        _markFirstFieldValidation($(this));
       }
-      
+
       _urlFieldValidations.call(this);
     });
-    
+
     // Submission of form
     $(selector.forSubmitButton).on("click", function() {
       $(selector.forRequiredFields).each(function() {
         _markFirstFieldValidation($(this));
       });
-      
+
       if (_isFormValid()) {
         _submitForm();
       }
     });
   }
-  
+
   function _generalRequiredFieldValidations() {
     var $field = $(this);
     var val = $field.val().trim();
-    
+
     if (val) {
       _removeFieldErrorState($field);
     } else {
       _showFieldErrorState($field);
     }
-    
+
     _handleFormStateUpdate();
   }
-  
+
   // Check for conditions that warrant removing the error
   function _emailFieldChangeValidations(i, el) {
     var $field = $(this);
     var email = $field.val().trim();
-    
+
     if (email && _isValidEmail(email)) {
       _removeFieldErrorState($field);
     } else {
       _showFieldErrorState($field);
     }
-    
+
     _handleFormStateUpdate();
   }
-  
+
   function _emailFieldBlurValidations(i, el) {
     var $field = $(this);
     var email = $field.val().trim();
-    
+
     if (!email) {
       return;
     }
-    
+
     if (!_isValidEmail(email)) {
       _showFieldErrorState($field);
     }
-    
+
     _handleFormStateUpdate();
   }
-  
+
   function _urlFieldValidations(i, el) {
     var $field = $(this);
     var url = $field.val().trim();
-    
+
     if (!url) {
       _removeFieldErrorState($field);
       return;
     }
-    
+
     if (_isValidUrl(url)) {
       _removeFieldErrorState($field);
     } else {
       _showFieldErrorState($field);
     }
-    
+
     _handleFormStateUpdate();
   }
 
@@ -138,87 +139,87 @@ ConcentricSurveyForm = (function() {
     if (_isBotTrapped()) {
       return false;
     }
-    
+
     var $emailField = $(selector.forEmailField);
     var email = $emailField.val().trim();
     if (!_isValidEmail(email)) {
       _showFieldErrorState($emailField);
       valid = false;
     }
-    
+
     var $requiredFields = $(selector.forRequiredFields);
     if (!_requiredFieldsReady($requiredFields)) {
       var fieldsWithoutValue = [];
       var $thisField;
       var thisFieldValue;
-      
+
       $requiredFields.each(function(i, el) {
         $thisField = $(el);
         thisFieldValue = $thisField.val().trim();
-        
+
         if (!thisFieldValue) {
           _showFieldErrorState($thisField);
         }
       });
-      
+
       valid = false;
     }
-    
+
     var $urlField = $(selector.forUrlField);
     var url = $urlField.val().trim();
     if (url && !_isValidUrl(url)) {
       _showFieldErrorState($urlField);
       valid = false;
     }
-    
+
     _handleFormStateUpdate();
     return valid;
   }
-  
+
   function _isBotTrapped() {
     return !!$(selector.forBotTrapField).val();
   }
-  
+
   function _isValidUrl(url) {
     return Concentric.Utilities.isValidUrl(url);
   }
-  
+
   function _isValidEmail(email) {
     return Concentric.Utilities.isValidEmail(email);
   }
-  
+
   function _requiredFieldsReady($fields) {
     var $requiredFields = $fields;
     var ready = true;
-    
+
     $requiredFields.each(function(i, el) {
       if (!$(el).val().trim()) {
         ready = false;
       }
     });
-    
+
     return ready;
   }
-  
+
   function _elementHasAttribute($el, attrName) {
     var attributeValue = $el.attr(attrName);
     return typeof attributeValue !== typeof undefined && attributeValue !== false;
   }
-  
+
   function _markFirstFieldValidation($el) {
     $el.attr(attributeName.forValidationCheck, true);
   }
-  
+
   function _showFieldErrorState($field) {
     var $container = _getFieldContainer($field);
     $container.addClass(className.forHasError);
   }
-  
+
   function _removeFieldErrorState($field) {
     var $container = _getFieldContainer($field);
     $container.removeClass(className.forHasError);
   }
-  
+
   function _handleFormStateUpdate() {
     if (_somethingHasAnError()) {
       _showFormErrorState();
@@ -226,19 +227,19 @@ ConcentricSurveyForm = (function() {
       _removeFormErrorState();
     }
   }
-  
+
   function _somethingHasAnError() {
     return $(selector.forFormElementsContainer + " ." + className.forHasError).length;
   }
-  
+
   function _showFormErrorState() {
     $(selector.forSubmitContainer).addClass(className.forHasError);
   }
-  
+
   function _removeFormErrorState(fields) {
     $(selector.forSubmitContainer).removeClass(className.forHasError);
   }
-  
+
   function _submitForm() {
     var $form = $(selector.forForm);
 
@@ -259,13 +260,14 @@ ConcentricSurveyForm = (function() {
         console.log("An error has occurred during survey submission.", err);
       },
       success: function (data) {
-        window.location.href = data.next;
+        var thanksUrl = $(selector.forSuccessScreenUrl).get(0).value;
+        window.location.href = thanksUrl;
       }
     });
   }
-  
+
   function _getFieldContainer($field) {
-    return $field.parents(selector.forFieldContainer);  
+    return $field.parents(selector.forFieldContainer);
   }
 
   function _bindFieldHasValueState($el) {
@@ -280,23 +282,23 @@ ConcentricSurveyForm = (function() {
       }
     });
   };
-  
+
   function _bindFieldHasFocusState($el) {
     $el.focusin(function() {
       var $container = _getFieldContainer($(this));
       $container.addClass(className.forHasFocus);
     });
-    
+
     $el.focusout(function() {
       var $container = _getFieldContainer($(this));
       $container.removeClass(className.forHasFocus);
     });
   };
-  
+
   function init() {
     _setupSurveyFormBindings();
   }
-  
+
   return {
     init: init
   };
