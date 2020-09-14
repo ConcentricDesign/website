@@ -78,23 +78,6 @@ layout: default
         {% when "dribbble_feed" %}
           {% include dribbble-feed.html %}
 
-        {% when "concierge" %}
-          <div class="hero-capabilities">
-            <div class="row">
-              <div class="concierge-features">
-                {% assign sorted_features = section.features | sort:"position" %}
-                {% for feature in sorted_features %}
-                  <div class="capability-module">
-                    <div class="capability-graphic">
-                      <img src="{{ feature.image }}" />
-                    </div>
-                    <h2 class="capability-title">{{ feature.title }}</h2>
-                  </div>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-
       {% endcase %}
       <div class="section-footer">
         {{ section.footer_md | markdownify }}
