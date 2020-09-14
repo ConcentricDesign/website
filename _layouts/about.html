@@ -9,7 +9,7 @@ layout: default
       {% unless section.name == "hero" %}
         {{ section.content_md | markdownify }}
       {% endunless %}
-      
+
       {% case section.name %}
         {% when "hero" %}
           <div class="row">
@@ -120,14 +120,14 @@ layout: default
                   </div>
                 </div>
               {% endfor %}
-            </div>  
+            </div>
           </div>
-        
+
         {% when "start_project" %}
           <div class="section-footer">
             {{ section.footer_md }}
           </div>
-        
+
         {% when "bios" %}
           <div class="row">
             <div class="col-sm-12 col-md-5 col-md-offset-1">
@@ -155,13 +155,8 @@ layout: default
               {% include bio-contact-links.html %}
             </div>
           </div>
-          
-        {% when "instagram_feed" %}
-          {% include instagram-feed.html %}
-          <div class="section-footer">
-            {{ section.footer_md }}
-          </div>
-          
+
+        
         {% when "clients" %}
           <div class="client-logo-grid space-top-large">
             <div class="row">
@@ -178,10 +173,10 @@ layout: default
               </div>
             </div>
           </div>
-          
+
         {% when "get_started" %}
 
-      {% endcase %}   
+      {% endcase %}
     </div>
   </section>
 {% endfor %}
