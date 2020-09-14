@@ -4,7 +4,7 @@ permalink: "/about/"
 position: 2
 sections:
 - name: hero
-  bg_color_name: 
+  bg_color_name:
   title_md: "# We mean business."
   content_md: |-
     <p class="bigger">Concentric Design is a Chicago-based graphic design firm that specializes in visual identity, website, and print design projects for a variety of clients seeking to positively impact their customers and communities. </p>
@@ -12,7 +12,7 @@ sections:
     <p class="bigger">If you’re interested in working with Concentric Design, send us a note or give us a call. We can’t wait to <a href="/contact" class="link link-green">get started</a>.</p>
   content_photo: "/uploads/working_together_cards.jpg"
 - name: what_we_do
-  bg_color_name: 
+  bg_color_name:
   title_md: "# What we can do for you."
   services:
   - title: Identity
@@ -63,11 +63,11 @@ sections:
     - Signage
     - Tradeshow Display Systems
     - Annual Reports
-  content_md: 
+  content_md:
 - name: process
-  bg_color_name: 
+  bg_color_name:
   title_md: "# We work with you."
-  content_md: 
+  content_md:
   content_photo: "/uploads/working_desk.jpg"
   process_steps:
   - step_id: 1
@@ -128,13 +128,8 @@ sections:
       linkedin: jdmeador
       dribbble: jeffmeador
   title_md: "# Nice to meet you."
-- name: instagram_feed
-  bg_color_name: 
-  title_md: "# What we're up to."
-  footer_md: <h2><a href="https://instagram.com/concentricdesign" target="_blank"
-    class="link link-pink">Follow us</a> on Instagram.</h2>
 - name: clients
-  bg_color_name: 
+  bg_color_name:
   title_md: "# We work with people like you."
   content_md: |-
     We work with a diverse array of clients. Whether your organization is small or large, near or far, you can be sure the experience will be smooth and successful. Here are a few of our past and present clients.
@@ -160,8 +155,7 @@ sections:
   bg_color_name: green-faded
   title_md: <h1 class="mb-0">Let's <a href="/contact" class="link link-green">get
     started</a>.</h1>
-  content_md: 
+  content_md:
 og_image: "/uploads/working_together_cards.jpg"
 layout: about
 ---
-
