@@ -55,8 +55,7 @@ sections:
   content_md: |-
     We’d love to talk with you about your next creative endeavor. Send us a note or give us a call and let’s start a new project together.
     {: .bigger .text-center }
-  footer_md: <h2><a href="https://concierge.concentric.design" target="_blank" class="btn">Learn
-    more</a></h2>
+  footer_md: <h2><a href="/contact" class="btn">Learn more</a></h2>
 og_image: "/uploads/concentric_design_ogshare.png"
 layout: homepage
 ---
