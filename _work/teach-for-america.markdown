@@ -1,7 +1,7 @@
 ---
 title: Teach For America
 date: 2020-10-07 10:54:00 -05:00
-permalink: "/teach-for-america"
+permalink: "/work/teach-for-america/"
 categories:
 - Print
 position: 1
