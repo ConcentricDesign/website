@@ -28,5 +28,6 @@ photos:
 - "/uploads/Portfolio_TFA-Mural-1.png"
 - "/uploads/Portfolio_TFA-Annual-Report.png"
 - "/uploads/Portfolio_TFA-Annual-Report-Spreads.png"
+outro_text: 'Mural illustration by [Maggie Famiglietti](https://magadeth.com). '
 ---
 
