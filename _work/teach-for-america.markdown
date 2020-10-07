@@ -3,6 +3,7 @@ title: Teach For America
 date: 2020-10-07 10:54:00 -05:00
 categories:
 - Print
+position: 1
 name: Teach For America
 description: Teach for America is a national nonprofit organization working towards
   educational equity for all children. We’ve helped our local TFA Chicago-Northwest

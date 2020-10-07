@@ -5,7 +5,7 @@ permalink: "/work/netrix/"
 categories:
 - Identity
 - Print
-position: 9
+position: 10
 name: Netrix
 description: |-
   Since 1989, Netrix has helped clients simplify technology sourcing and accelerate technology deployment. They are an expert technology resource for all IT design, integration, maintenance, and management needs.

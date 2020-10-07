@@ -5,7 +5,7 @@ permalink: "/work/ramsey-lewis/"
 categories:
 - Identity
 - Digital
-position: 5
+position: 6
 name: Ramsey Lewis
 description: Chicago-born pianist and jazz legend Ramsey Lewis was in a need of a
   website refresh and was also looking for a new logo treatment for his name. Referencing
