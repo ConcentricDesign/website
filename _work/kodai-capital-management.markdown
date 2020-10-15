@@ -29,11 +29,10 @@ cover_photo: "/uploads/Portfolio_Kodai-Cover-Portfolio.png"
 photos:
 - "/uploads/Portfolio_Kodai-Cover-Project.png"
 - "/uploads/Portfolio_Kodai-Monogram.png"
+- "/uploads/Portfolio_Kodai-Letterhead.png"
 - "/uploads/Portfolio_Kodai-Business-Cards.png"
 - "/uploads/Portfolio_Kodai-Presentation-Slides.png"
 - "/uploads/Portfolio_Kodai-Monogram-Window.png"
-- "/uploads/Portfolio_Kodai-Letterhead.png"
 - "/uploads/Portfolio_Kodai-Guidelines.png"
-- 
 ---
 
