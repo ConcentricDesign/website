@@ -1,7 +1,7 @@
 ---
 title: Kodai Capital Management
 date: 2020-10-15 11:39:00 -05:00
-permalink: "/work/kodai-capital-management"
+permalink: "/work/kodai-capital-management/"
 categories:
 - Identity
 - Print
