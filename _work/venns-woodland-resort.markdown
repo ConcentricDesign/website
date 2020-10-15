@@ -5,7 +5,7 @@ permalink: "/work/venns/"
 categories:
 - Identity
 - Digital
-position: 9
+position: 11
 name: Venn's Woodland Resort
 description: Venn’s Woodland Resort is a beautiful, family-run resort in Eagle River,
   Wisconsin. Tired of managing multiple calendars manually, the Venn’s team reached

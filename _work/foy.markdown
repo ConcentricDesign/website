@@ -9,6 +9,7 @@ categories:
 - Print
 tags:
 - featured
+position: 0
 name: Foy
 lead: Visual identity, packaging, digital, and print design for a CBD therapeutics
   start-up.

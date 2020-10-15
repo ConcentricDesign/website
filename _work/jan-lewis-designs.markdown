@@ -5,7 +5,7 @@ permalink: "/work/jan-lewis-designs/"
 categories:
 - Identity
 - Digital
-position: 2
+position: 4
 name: Jan Lewis Designs
 description: Artist Jan Lewis was looking to reach a new and broader audience by starting
   a line of contemporary lifestyle and fashion products that were a translation of

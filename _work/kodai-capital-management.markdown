@@ -6,6 +6,7 @@ categories:
 - Identity
 - Print
 - Digital
+position: 2
 name: Kodai Capital Management
 description: Kodai Capital Management reached out to Concentric in need of a visual
   identity system for their newly formed hedge fund firm. We worked with the founders
