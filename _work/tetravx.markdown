@@ -5,8 +5,6 @@ permalink: "/work/tetravx/"
 categories:
 - Identity
 - Print
-tags:
-- featured
 position: 10
 name: TetraVX
 lead: Visual identity for a new business communication platform.
