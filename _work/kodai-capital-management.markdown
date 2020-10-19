@@ -6,6 +6,8 @@ categories:
 - Identity
 - Print
 - Digital
+tags:
+- featured
 position: 2
 name: Kodai Capital Management
 lead: Visual identity for a new hedge fund firm.
