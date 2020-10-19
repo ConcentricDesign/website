@@ -62,6 +62,6 @@ quote:
 outro_text: |-
   Product photography by [Alex Wallbaum](https://alexwallbaum.com).
 
-  Marketing photography by [Paul H. Christian | YtC Studios](https://www.ytcstudios.com/).
+  Product marketing photography by [Paul H. Christian | YtC Studios](https://www.ytcstudios.com/).
 ---
 
