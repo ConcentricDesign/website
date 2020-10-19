@@ -55,13 +55,13 @@ photos:
 - "/uploads/Portfolio_Foy-Instagram-Ads-min.png"
 - "/uploads/Portfolio_Foy-Subway-Ad-min.png"
 quote:
-  attribution: Moose Haile, co-founder
+  attribution: "– Moose Haile, co-founder"
   text: Concentric was able to help us see the potential for our brand in a new way.
     The team has been helpful since day one and everyone here has been very happy
     with their ideas and deliverables.
 outro_text: |-
-  Marketing photography by [Paul H. Christian | YtC Studios].(https://www.ytcstudios.com/)
-
   Product photography by [Alex Wallbaum](https://alexwallbaum.com).
+
+  Marketing photography by [Paul H. Christian | YtC Studios](https://www.ytcstudios.com/).
 ---
 
