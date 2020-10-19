@@ -8,7 +8,7 @@ categories:
 - Print
 tags:
 - featured
-position: 1
+position: 0
 name: Sun Foundation
 lead: Visual identity, Squarespace website, and print design for an art and environmental
   sciences non-profit.
