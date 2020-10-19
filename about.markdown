@@ -5,7 +5,7 @@ position: 2
 sections:
 - name: hero
   bg_color_name: 
-  title_md: "# We mean business."
+  title_md: "# About Concentric Design"
   content_md: |-
     <p class="bigger">Concentric Design is a Chicago-based graphic design firm that specializes in visual identity, website, and print design projects for a variety of clients seeking to positively impact their customers and communities. </p>
     <p class="bigger">As a small firm, we’re able to really get to know our customers and understand their culture and vision in order to provide solutions that work. Although we’re small, we’ve built relationships with creative partners that support us in providing quality results for diverse project types and sizes.</p>
