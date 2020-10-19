@@ -3,8 +3,8 @@ title: Work
 date: 2016-10-31 16:54:00 -05:00
 permalink: "/work/"
 position: 1
-title_md: "# We work hard."
-content_md: ''
+title_md: "# Work"
+content_md: 
 filters:
 - name: all
   label: All Projects
