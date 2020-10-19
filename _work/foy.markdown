@@ -60,6 +60,6 @@ quote:
     The team has been helpful since day one and everyone here has been very happy
     with their ideas and deliverables.
 outro_text: Product photography by [Alex Wallbaum](http://alexwallbaum.com). Product
-  marketing photography by [Paul H. Christian &#124 YtC Studios](https://www.ytcstudios.com/).
+  marketing photography by [Paul H. Christian, YtC Studios](https://www.ytcstudios.com/).
 ---
 
