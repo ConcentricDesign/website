@@ -4,7 +4,7 @@ date: 2020-10-07 10:54:00 -05:00
 permalink: "/work/teach-for-america/"
 categories:
 - Print
-position: 3
+position: 4
 name: Teach For America
 description: Teach for America is a national nonprofit organization working towards
   educational equity for all children. We’ve helped our local TFA Chicago-Northwest

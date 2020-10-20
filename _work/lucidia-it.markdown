@@ -5,7 +5,7 @@ permalink: "/work/lucidia-it/"
 categories:
 - Identity
 - Digital
-position: 7
+position: 8
 name: Lucidia IT
 description: This growing woman-owned IT service provider was interested in improving
   and standardizing their brand identity. We helped them take their “brightest star”

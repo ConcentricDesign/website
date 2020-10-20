@@ -7,6 +7,7 @@ categories:
 - Digital
 tags:
 - featured
+position: 1
 name: Gadget Salvation
 lead: Brand strategy, visual identity, and voice for an established electronics marketplace.
 description: Gadget Salvation is an electronics marketplace that specializes in giving

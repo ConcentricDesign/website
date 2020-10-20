@@ -6,7 +6,7 @@ categories:
 - Identity
 - Digital
 - Print
-position: 15
+position: 16
 name: The Huestudio + Company
 lead: Visual identity, responsive web, and print design for a very colorful event
   management company.

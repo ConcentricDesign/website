@@ -8,7 +8,7 @@ categories:
 - Digital
 tags:
 - featured
-position: 2
+position: 3
 name: Kodai Capital Management
 lead: Visual identity for a new hedge fund firm.
 description: Kodai Capital Management reached out to Concentric in need of a visual

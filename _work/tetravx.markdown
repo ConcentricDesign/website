@@ -5,7 +5,7 @@ permalink: "/work/tetravx/"
 categories:
 - Identity
 - Print
-position: 10
+position: 11
 name: TetraVX
 lead: Visual identity for a new business communication platform.
 description: TetraVX is an interoperable Unified Communications platform for businesses
