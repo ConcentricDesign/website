@@ -31,7 +31,7 @@ service_groups:
   - Information Architecture
   - Email Marketing
   - Social Media Strategy
-cover_photo: "/uploads/Portfolio_Gadget-Salvation_Cover-Portfolio-min.png"
+cover_photo: "/uploads/Portfolio_Gadget-Salvation_Cover-Portfolio.png"
 photos:
 - "/uploads/Portfolio_Gadget-Salvation_Cover-Project-min.png"
 - "/uploads/Portfolio_Gadget-Salvation_Illustration-1-min.png"
