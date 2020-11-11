@@ -43,7 +43,7 @@ photos:
 - "/uploads/Portfolio_Gadget-Salvation_Guidelines-min.png"
 - "/uploads/Portfolio_Gadget-Salvation_Emails-min.png"
 quote:
-  attribution: Lena Bohomolova, Co-owner & Operations Manager
+  attribution: "– Lena Bohomolova, Co-owner & Operations Manager"
   text: Their artistic vision and ability to incorporate feedback into a beautiful
     end product blew us away.
 ---
