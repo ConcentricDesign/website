@@ -35,13 +35,17 @@ service_groups:
 cover_photo: "/uploads/Portfolio_Gadget-Salvation_Cover-Portfolio.png"
 photos:
 - "/uploads/Portfolio_Gadget-Salvation_Cover-Project-min.png"
-- "/uploads/Portfolio_Gadget-Salvation_Illustration-1-min.png"
+- "/uploads/Portfolio_Gadget-Salvation_Illustration-3-min.png"
 - "/uploads/Portfolio_Gadget-Salvation_Gadji-min.png"
 - "/uploads/Portfolio_Gadget-Salvation_Subway-Ads-min.png"
-- "/uploads/Portfolio_Gadget-Salvation_Website-min.png"
+- "/uploads/Portfolio_Gadget-Salvation_Social-Story-min.png"
+- "/uploads/Portfolio_Gadget-Salvation_Social-Posts-min.png"
 - "/uploads/Portfolio_Gadget-Salvation_Gadji-in-Use-min.png"
+- "/uploads/Portfolio_Gadget-Salvation_Illustration-2-min.png"
 - "/uploads/Portfolio_Gadget-Salvation_Guidelines-min.png"
 - "/uploads/Portfolio_Gadget-Salvation_Emails-min.png"
+- "/uploads/Portfolio_Gadget-Salvation_Illustration-1-min.png"
+- "/uploads/Portfolio_Gadget-Salvation_Website-min.png"
 quote:
   attribution: "– Lena Bohomolova, Co-owner & Operations Manager"
   text: Their artistic vision and ability to incorporate feedback into a beautiful
